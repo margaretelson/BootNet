@@ -1,0 +1,8 @@
+redirectURL = https://crouton.net
+URLENCODE(redirectURI) =
+clientid = 78b9m5t04wd6eg
+clientSecret = CBIaCTT1lxGe4Hl5
+
+
+What you need:
+scope = r_liteprofile
