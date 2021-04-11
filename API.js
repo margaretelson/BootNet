@@ -1,5 +1,16 @@
+var script = document.createElement('script');
+script.src = 'https://code.jquery.com/jquery-3.2.1.min.js';
 const btnRepos = document.getElementById("btnRepos")
 const divResult = document.getElementById("divResult")
+const imgResult = document.getElementById("imgResult")
+const nameResult = document.getElementById("nameResult")
+const usernameResult = document.getElementById("usernameResult")
+const bioResult = document.getElementById("bioResult")
+const companyResult = document.getElementById("companyResult")
+const hireResult = document.getElementById("hireResult")
+const portfolioResult = document.getElementById("portfolioResult")
+const githubResult = document.getElementById("githubResult")
+
 
 btnRepos.addEventListener("click", getUser)
 
@@ -11,25 +22,25 @@ async function getUser(){
     const result = await response.json()
     console.log(result)
 
-    console.log(result.name)
-    divResult.appendChild(document.createTextNode(result.name))
+    imgResult.src=result.avatar_url
+    nameResult.appendChild(document.createTextNode(result.name))
+    usernameResult.appendChild(document.createTextNode(result.login))
     divResult.appendChild(document.createElement("br"))
-    divResult.appendChild(document.createTextNode(result.login))
+    bioResult.appendChild(document.createTextNode(result.bio))
+    companyResult.appendChild(document.createTextNode(result.company))
+    hireResult.appendChild(document.createTextNode(result.hireable))
+    portfolioResult.appendChild(document.createTextNode(result.blog))
     divResult.appendChild(document.createElement("br"))
-    divResult.appendChild(document.createTextNode(result.location))
-    divResult.appendChild(document.createElement("br"))
+    githubResult.appendChild(document.createTextNode(result.url))
 
-    
-    const anchor = document.createElement("a")
-    anchor.href = result.url
-    divResult.appendChild(anchor)
-    divResult.appendChild(document.createTextNode(result.url))
+    divResult.style.display="block"
     
 
 }
-$("#search").on("click", function getUser(){
+$("#btnRepos").on("click", function getUser(){
+    $("#cardcontainer").empty()
     console.log("working?")
  })
  getUser();
 
-$("#search").on("click", getUser)
+$("#btnRepos").on("click", getUser)
