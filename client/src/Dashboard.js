@@ -1,10 +1,13 @@
 import React from 'react'
+import HeaderImage from './header.png';
+import { Container } from 'react-bootstrap';
 
 const Dashboard = () => {
   return (
-    <div>
-      <h1> Dashboard </h1>
-    </div>
+    <Container>
+      <img src={HeaderImage} alt='' />
+      
+    </Container>
   )
 }
 

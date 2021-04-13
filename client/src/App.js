@@ -3,13 +3,13 @@ import './App.css';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Dashboard from './Dashboard';
 import AlumniSearch from './AlumniSearch';
-import Navbar from './Navbar';
+import Navigation from './Navigation';
 
 
 function App() {
   return (
     <Router className="App">
-      <Navbar />
+      <Navigation />
       <Switch>
         <Route exact path='/' component={Dashboard} />
         <Route exact path='/alumnisearch'>
