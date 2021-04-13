@@ -1,9 +1,15 @@
-import React, { useEffect, useState } from 'react'
+import React, { useState } from 'react'
 import axios from 'axios';
 
 const AlumniSearch = () => {
   
+  
+  const searchAlumni = (input) => {
+    axios.get('https://api.github.com/users/' + input).then(res => {
+      console.log(res.data);
 
+    }).catch(err => console.log(err));
+  }
 
   return (
     <div>
