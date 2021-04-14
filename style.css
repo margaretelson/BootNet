@@ -1,3 +1,7 @@
 #divResult{
     display: none
 }
+
+#saveBtn{
+    width: 43vw;
+}
