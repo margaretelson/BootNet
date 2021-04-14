@@ -5,7 +5,7 @@ import { InputGroup, FormControl, Button } from 'react-bootstrap';
 
 const AlumniSearch = () => {
   const [searchString, setSearchString] = useState('');
-  
+  const [alumn, setAlumn] = useState({});
   const [alumniData, setAlumniData] = useState({
     name: '',
     avatar_url: '',
@@ -25,6 +25,7 @@ const AlumniSearch = () => {
     .then(res =>
       {
         console.log(res);
+        setAlumn(res.data);
         setAlumniData({
           name: res.data.name,
           avatar_url: res.data.avatar_url,
@@ -56,7 +57,7 @@ const AlumniSearch = () => {
       <Button onClick={() => {searchAlumni(searchString)}} variant="outline-secondary">Search</Button>
       </InputGroup.Append>
       </InputGroup>
-      <AlumniCard 
+      {/* <AlumniCard 
       name={alumniData.name}
       avatar_url={alumniData.avatar_url}
       email={alumniData.email}
@@ -66,7 +67,8 @@ const AlumniSearch = () => {
       bio={alumniData.bio}
       id={alumniData.id}
       link={alumniData.link}
-      />
+      /> */}
+      <AlumniCard alumn={alumn} />
       </div>
       )
     }
