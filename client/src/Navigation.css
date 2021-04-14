@@ -1,0 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Barriecito&display=swap');
+
+.bootNav {
+  align-items: center;
+}
+.bootNav > Link {
+  text-decoration: none !important;
+}
+
+/* font-family: 'Barriecito', cursive;
+fontColor: {#a44823} */

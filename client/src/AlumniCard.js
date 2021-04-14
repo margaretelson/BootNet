@@ -1,8 +1,7 @@
 import React from "react"
 import { Card, ListGroup, ListGroupItem } from "react-bootstrap";
 
-const AlumniCard = (
-  { alumn, name, link, avatar_url, email, location, hireable, company, bio, id }) => {
+const AlumniCard = ({ alumn }) => {
   return (
 
     <Card style={{ width: "18rem" }}>

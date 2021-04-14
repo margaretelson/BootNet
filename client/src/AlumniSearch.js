@@ -6,16 +6,7 @@ import { InputGroup, FormControl, Button } from 'react-bootstrap';
 const AlumniSearch = () => {
   const [searchString, setSearchString] = useState('');
   const [alumn, setAlumn] = useState({});
-  const [alumniData, setAlumniData] = useState({
-    name: '',
-    avatar_url: '',
-    email: '',
-    location: '',
-    hireable: '',
-    company: '',
-    bio: '',
-    id: '',
-  })
+  
   // Make API call to GET alumni data for a GitHub user. 
   // If successful(200), console log the response(res) and capture it in state using "setAlumniData". (So "setAlumniData" is a value that holds that API res)
   // If the call is unsuccessful, producing HTTP 500, 404, or any other error, capture and console log it.
@@ -26,18 +17,6 @@ const AlumniSearch = () => {
       {
         console.log(res);
         setAlumn(res.data);
-        setAlumniData({
-          name: res.data.name,
-          avatar_url: res.data.avatar_url,
-          email: res.data.email,
-          location: res.data.location,
-          hireable: res.data.hireable,
-          company: res.data.company,
-          bio: res.data.bio,
-          id: res.data.id,
-          link: res.data.link
-        })
-        
       }).catch(err => console.log(err));
     }
 // Input field for search bar. 
@@ -57,17 +36,6 @@ const AlumniSearch = () => {
       <Button onClick={() => {searchAlumni(searchString)}} variant="outline-secondary">Search</Button>
       </InputGroup.Append>
       </InputGroup>
-      {/* <AlumniCard 
-      name={alumniData.name}
-      avatar_url={alumniData.avatar_url}
-      email={alumniData.email}
-      location={alumniData.location}
-      hireable={alumniData.hireable}
-      company={alumniData.company}
-      bio={alumniData.bio}
-      id={alumniData.id}
-      link={alumniData.link}
-      /> */}
       <AlumniCard alumn={alumn} />
       </div>
       )

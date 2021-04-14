@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { Nav, Navbar, Form, FormControl, NavDropdown, Button } from 'react-bootstrap';
 import BootLogo from './logo.png';
+import './Navigation.css';
 
 const Navigation = () => {
   return (
@@ -10,13 +11,12 @@ const Navigation = () => {
     <Navbar.Brand><Link to='/'><img style={{width: '72px'}} src={BootLogo} alt=''/></Link></Navbar.Brand>
     <Navbar.Toggle aria-controls="basic-navbar-nav" />
     <Navbar.Collapse id="basic-navbar-nav">
-      <Nav className="mr-auto">
+      <Nav className="mr-auto bootNav" >
         {/* <Nav.Link href="#home">Home</Nav.Link>
         <Nav.Link href="#link">Link</Nav.Link> */}
-        <Nav.Link>
-          <Link to='/'>Dashboard</Link>
-        </Nav.Link>
-        <Nav.Link><Link to='/alumnisearch'>Search Alumni</Link></Nav.Link>
+        
+        <Link to='/'>Dashboard</Link>
+        <Link to='/alumnisearch'>Search Alumni</Link>
         <NavDropdown title="Dropdown" id="basic-nav-dropdown">
           <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
           <NavDropdown.Item href="#action/3.2">Another action</NavDropdown.Item>
