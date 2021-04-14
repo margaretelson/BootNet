@@ -1,11 +1,35 @@
 @import url('https://fonts.googleapis.com/css2?family=Barriecito&display=swap');
 
-.bootNav {
-  align-items: center;
-}
-.bootNav > Link {
-  text-decoration: none !important;
+nav {
+  justify-content: center !important;
 }
 
-/* font-family: 'Barriecito', cursive;
-fontColor: {#a44823} */
+.bootNav {
+  display: flex;
+  align-items: center;
+  
+}
+.bootNav > a {
+  text-decoration: none !important;
+  /* font-family: 'Barriecito', cursive; */
+  color: #a44823;
+}
+
+.bootDropDown {
+  text-decoration: none !important;
+  /* font-family: 'Barriecito', cursive; */
+  color: #a44823 !important;
+}
+
+.bootDropDown > a {
+  text-decoration: none !important;
+  /* font-family: 'Barriecito', cursive; */
+  color: #a44823 !important;
+}
+
+.bootDropDown > a > div {
+  text-decoration: none !important;
+  /* font-family: 'Barriecito', cursive; */
+  color: #a44823 !important;
+}
+
