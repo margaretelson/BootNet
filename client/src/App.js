@@ -1,9 +1,9 @@
 import React from "react";
 import "./App.css";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import Dashboard from "./Dashboard";
-import AlumniSearch from "./AlumniSearch";
-import Navigation from "./Navigation";
+import Dashboard from "./pages/dashboard/Dashboard";
+import AlumniSearch from "./components/AlumniSearch/AlumniSearch";
+import Navigation from "./components/Navigation";
 
 function App() {
   return (

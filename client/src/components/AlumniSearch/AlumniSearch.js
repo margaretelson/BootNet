@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import axios from 'axios';
-import AlumniCard from './AlumniCard';
+import AlumniCard from "../AlumniCard/AlumniCard";
 import { InputGroup, FormControl, Button } from 'react-bootstrap';
 
 const AlumniSearch = () => {
