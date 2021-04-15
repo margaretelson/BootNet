@@ -79,7 +79,7 @@ Ping us on with questions or project feedback:
 
 ## TECHNOLOGIES
 ### GitHub API
-![GitHub data in console](/client/public/github-data-in-console.png)
+![GitHub data in console](/client/src/Assets/github-data-in-console.png)
 
 ### MongoDB
 
@@ -93,8 +93,8 @@ We created [a BootNet page on LinkedIn] (https://www.linkedin.com/company/bootne
 
 ![LinkedIn page for BootNetwork](/client/public/linkedin.png)
 
-###Slack Channek
-We also created a ![Slack channel](/client/public/slack.png) @BootNetwork.
+###Slack Channel
+We also created a ![Slack channel](/client/src/Assets/slack.png) @BootNetwork.
 
 ## CREDITS
 
