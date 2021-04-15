@@ -1,6 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Barriecito&display=swap');
+
 .App {
   text-align: center;
 }
+
+h1 {
+  font-size: 5rem;
+  font-family: Barriecito, 'cursive';
+  color: #a44823;
+}
+
 
 .App-logo {
   height: 40vmin;

@@ -1,70 +1,127 @@
-# Getting Started with Create React App
+# BOOTNETWORK APP
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+[![stars - readme-generator](https://img.shields.io/github/stars/melissakinsey/readme-generator?style=social)](https://github.com/melissakinsey/readme-generator)
+[![forks - readme-generator](https://img.shields.io/github/forks/melissakinsey/readme-generator?style=social)](https://github.com/melissakinsey/readme-generator)
 
-## Available Scripts
+* [Description](##Description)
+* [User Story](##User_Story)
+* [Installation](##Installation)
+* [Usage](##Usage)
+* [Features](##Features)
+* [Technical Specs](##Technical_Specs)
+* [Lessons Learned](##Lessons_Learned)
+* [Contributions](##Contributions)
+	
 
-In the project directory, you can run:
+## DESCRIPTION
+This tool [does this]. It was built as a homework assignment for the Columbia University Engineering Full-Stack Boot Camp (October 2020-April 2021).
 
-### `npm start`
+### Project Repo & Demo
+The [code for this app](https://github.com/margaretelson/BootNet) is housed on GitHub.  
+		
+### User Story
+*AS A* boot camp graduate 
+*I WANT TO* network with other boot camp grads 
+*SO I CAN* get an edge in the job market.	
+	
+### Usage
+To use this app, [do this]. To see how this app works, watch this quick [video demo](https://youtu.be/xxxx).
+	
+## FEATURES
+This app makes it easy for user to [do this]. Users can also [do this].
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+![bootnetwork-app](assets/lorem-ipsum.png)
+	
+## TECHNICAL SPECS
+* Runs on[here] 
+* Requires XX authentication 
+* Uses MongoDB to store database records. 
+* Uses npm XXX 
+* Styled with modified React-Bootstrap.
+* Calls the GitHub API. 
+	
+## LESSONS LEARNED 
+* Lorem ipsum
+* Lorem ipsum
+* Lorem ipsum
+* Lorem ipsum
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
 
-### `npm test`
+## CONTACT US
+Ping us on with questions or project feedback:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Lindsay Bowen
+* GitHub: [@loremipsum](https://link)
+* Twitter: [@loremipsum](https://twitter.com/loremipsum)
+* Email: [loremipsum@gmail.com](mailto:loremipsum@gmail.com)
+* LinkedIn: [linkedin.com/loremipsum](https://www.linkedin.com/in/loremipsum/)
 
-### `npm run build`
+### Margaret Elson
+* GitHub: [@margaretelson](https://link)
+* Twitter: [@loremipsum](https://twitter.com/loremipsum)
+* Email: [loremipsum@gmail.com](mailto:loremipsum@gmail.com)
+* LinkedIn: [linkedin.com/loremipsum](https://www.linkedin.com/in/loremipsum/)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Mateo Ferreira
+* GitHub: [@loremipsum](https://link)
+* Twitter: [@loremipsum](https://twitter.com/loremipsum)
+* Email: [loremipsum@gmail.com](mailto:loremipsum@gmail.com)
+* LinkedIn: [linkedin.com/loremipsum](https://www.linkedin.com/in/loremipsum/
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Melissa Kinsey
+* GitHub: [@melissakinsey](https://melissakinsey.github.io/portfolio/)
+* Twitter: [@KinseyMelissa](https://twitter.com/KinseyMelissa)
+* Email: [kinsey.melissa@gmail.com](mailto:kinsey.melissa@gmail.com)
+* LinkedIn: [linkedin.com/melissajaynekinsey](https://www.linkedin.com/in/melissajaynekinsey/)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
+## USER STORY
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+## TECHNOLOGIES
+### GitHub API
+![GitHub data in console](/client/public/github-data-in-console.png)
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### MongoDB
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+### React-Bootstrap
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+## OMNICHANNEL INTEGRATION
+In addition to our app, we created other ways for people to interact with BootNet. 
 
-## Learn More
+###LinkedIn Page
+We created [a BootNet page on LinkedIn] (https://www.linkedin.com/company/bootnetwork/?viewAsMember=true) to raise awareness and encourage people to check out our app.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+![LinkedIn page for BootNetwork](/client/public/linkedin.png)
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+###Slack Channek
+We also created a ![Slack channel](/client/public/slack.png) @BootNetwork.
 
-### Code Splitting
+## CREDITS
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+### People Credits
+Credit is due to our fabulous Columbia University Boot Camp instructor, teaching assistants, tutors, and staff.
 
-### Analyzing the Bundle Size
+### Image Credits
+* Header Image: Adobe Stock/PCH.Vector
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## LICENSE (This makes it official)
 
-### Making a Progressive Web App
+Copyright (c) 2020, BootNetwork
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
 
-### Advanced Configuration
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
 
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
