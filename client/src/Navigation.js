@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Nav, Navbar, Form, FormControl, NavDropdown, Button } from 'react-bootstrap';
-import BootLogo from './logo.png';
+import BootLogo from '/Assets/bootnetworklogo.png';
 
 const Navigation = () => {
   return (
