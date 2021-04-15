@@ -1,19 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Barriecito&display=swap');
+
 .card {
   display: grid;
-  grid-template-columns: 300px;
+  grid-template-columns: 200px;
   grid-template-rows: 210px 210px 80px;
   grid-template-areas: "image" "text" "links";
-  border-radius: 18px;
-  background: white;
-  box-shadow: 5px 5px 15px rgba(0,0,0,0.9);
+  /* background: white; */
+  box-shadow: 3px 3px 7px rgba(0,0,0,0.9);
   font-family: roboto;
+  font-size: 20px;
   text-align: center;
 }
 .card-image {
   grid-area: image;
   /* background: url(""); */
-  border-top-left-radius: 15px;
-  border-top-right-radius: 15px;
+  
   background-size: cover;
 }
 .card-text .text {
@@ -22,24 +23,37 @@
   font-size: 24px;
 }
 .card-links {
-  grid-area: links; 
+  grid-area: links;
 }
 .card-text .date {
   color: rgb(255, 7, 110);
   font-size:13px;
 }
 .card-text p {
-  color: grey;
-  font-size:15px;
+  color: #000000;
+  font-size: 1.6rem;
   font-weight: 300;
+  text-align: left;
+  margin-left: 3rem;
 }
+
 .card-text h2 {
   margin-top:0px;
   font-size:28px;
+  font-family: Barriecito, 'cursive';
+  font-size: 3.5rem;
+  padding-top: 1.5rem;
+  color: #00b3cd
 }
 .card-text h3 {
   margin-top:0px;
   font-size:24px;
+  font-family: Barriecito, 'cursive';
+  font-size: 2.25rem;
+  color: #fea905;
+  text-align: left;
+  margin-left: 3rem;
+
 }
 .card-text h4 {
   margin-top:0px;
@@ -50,9 +64,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr;
-  border-bottom-left-radius: 15px;
-  border-bottom-right-radius: 15px;
-  background: rgb(255, 7, 110);
+  background: #00b3cd;
 }
 .card-links .link {
   display: flex;
@@ -60,7 +72,10 @@
   justify-content: center;
   flex-direction: column;
   color: white;
-  padding: 10px;
+  padding: .5rem;
+  font-family: roboto;
+  font-weight: bold;
+  font-size: 2rem;
 }
 .card:hover {
   transform: scale(1.15);
