@@ -6,4 +6,5 @@ client/node_modules
 .env
 package-lock.json
 client/package-lock.json
+worksheet.linkedin.txt
 
