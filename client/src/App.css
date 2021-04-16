@@ -1,20 +1,18 @@
-@import url('https://fonts.googleapis.com/css2?family=Barriecito&display=swap');
-import /title.png 
-
-.App {
+@import url("https://fonts.googleapis.com/css2?family=Barriecito&display=swap");
+import /title.png .App {
   align-items: center;
 }
 
 h1 {
   font-size: 5rem;
-  font-family: Barriecito, 'cursive';
+  font-family: Barriecito, "cursive";
   color: #00b2cd;
- align-items: center;
+  align-items: center;
 }
 
 h2 {
   font-size: 5rem;
-  font-family: Barriecito, 'cursive';
+  font-family: Barriecito, "cursive";
   color: #00a1c4;
   text-align: center;
   padding-top: 1rem;

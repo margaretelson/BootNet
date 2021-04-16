@@ -8,7 +8,7 @@ import {
   NavDropdown,
   Button,
 } from "react-bootstrap";
-import BootLogo from "./Assets/bootlogo.jpg";
+import BootLogo from ".client/src/assets/bootlogo.jpg";
 
 const Navigation = () => {
   return (
