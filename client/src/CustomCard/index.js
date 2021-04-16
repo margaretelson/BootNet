@@ -6,7 +6,7 @@ const CustomCard = ({ alumn }) =>
 {
   return (<React.Fragment Fragment>
     <div className="card">
-      <div class="card-image"><img src={alumn.avatar_url} alt="BootNetwork Member" />
+      <div className="card-image"><img src={alumn.avatar_url} alt="BootNetwork Member" />
         <div className="card-text">
           <h2>{alumn.name}</h2>
       <h3>Email</h3>

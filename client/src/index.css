@@ -1,7 +1,6 @@
 body {
   margin: 0;
   padding: 0;
-  width: 1125px;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
@@ -16,12 +15,6 @@ code {
     monospace;
     display: flex;
 }
-Container {
-  width: 100%;
-  
-}
-
-
 
 .header {
   width: 100%;
