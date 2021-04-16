@@ -1,1 +1,3 @@
-module.exports = {GithubUser: require "./githubUser.js"}
+module.exports = {
+    GithubUser: require ("./githubUser")
+};
