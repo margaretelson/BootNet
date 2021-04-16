@@ -18,8 +18,7 @@ This tool [does this]. It was built as a homework assignment for the Columbia Un
 
 ### Project Repo & Demo
 
-The [code for this app](https://github.com/margaretelson/BootNet) is housed on GitHub.  
-
+The [code for this app](https://github.com/margaretelson/BootNet) is housed on GitHub.
 
 ### User Story
 
