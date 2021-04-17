@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import axios from "axios";
-import CustomCard from "./CustomCard";
+import CustomCard from "../components/CustomCard";
 import {
   InputGroup,
   FormControl,
