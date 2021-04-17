@@ -7,9 +7,8 @@ import "./Login.css";
 const Login = () => {
   return (
 <ContactWrapper>
-<WelcomeCard/>
+<WelcomeCard />
 <FormCard/>
-
 </ContactWrapper>
 
   );
