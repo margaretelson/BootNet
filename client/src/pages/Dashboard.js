@@ -1,6 +1,6 @@
 import React from "react";
-import HeaderImage from "./Assets/header.png";
-import TitleImage from "./Assets/title.png";
+import HeaderImage from "../assets/header.png";
+import TitleImage from "../assets/title.png";
 import { Container } from "react-bootstrap";
 
 const Dashboard = () => {
