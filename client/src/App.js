@@ -11,8 +11,11 @@ function App() {
       <Navigation />
       <Switch>
         <Route exact path="/" component={Dashboard} />
-        <Route exact path="./components/alumnisearch">
+        <Route path="/search">
           <AlumniSearch />
+        </Route>
+        <Route path="/dashboard">
+          <Dashboard />
         </Route>
       </Switch>
     </Router>

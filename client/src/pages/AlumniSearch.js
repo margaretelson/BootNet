@@ -19,10 +19,10 @@ const AlumniSearch = () => {
   // If the call is unsuccessful, producing HTTP 500, 404, or any other error, capture and console log it.
   const searchAlumni = (searchFor) => {
     axios
-      .get("https://api.github.com/users/" + searchFor)
+      .get("https://api.github.com/search/users?q=" + searchFor)
       .then((res) => {
         console.log(res);
-        setAlumn(res.data);
+        setAlumn(res.data.items);
       })
       .catch((err) => console.log(err));
   };
@@ -54,13 +54,14 @@ const AlumniSearch = () => {
           </InputGroup.Append>
         </InputGroup>
       </Row>
-      {alumn == null ? null : (
-        <Row>
-          <Col className="justify-content-center">
-            <CustomCard alumn={alumn} />
-          </Col>
-        </Row>
-      )}
+      <div className="d-flex flex-wrap">
+      {alumn
+        &&
+        alumn.map(user=>
+          <CustomCard alumn={user} />
+          ) 
+        }
+        </div>
     </Container>
   );
 };
