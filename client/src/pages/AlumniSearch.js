@@ -6,8 +6,8 @@ import {
   FormControl,
   Button,
   Container,
-  Row,
-  Col,
+  Row
+
 } from "react-bootstrap";
 
 const AlumniSearch = () => {
@@ -20,7 +20,8 @@ const AlumniSearch = () => {
   const searchAlumni = (searchFor) => {
     axios
       .get("https://api.github.com/search/users?q=" + searchFor)
-      .then((res) => {
+      .then((res) =>
+      {
         console.log(res);
         setAlumn(res.data.items);
       })
@@ -43,7 +44,7 @@ const AlumniSearch = () => {
             }}
           />
           <InputGroup.Append>
-            <Button
+            <Button className="button"
               onClick={() => {
                 searchAlumni(searchString);
               }}

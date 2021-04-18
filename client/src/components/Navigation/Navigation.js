@@ -4,7 +4,6 @@ import { Link } from "react-router-dom";
 import BootLogo from "../../assets/logo-sans-title.png";
 import { Container } from "react-bootstrap";
 
-
 const Navigation = () =>
 {
   return <Container>
@@ -21,7 +20,7 @@ const Navigation = () =>
     <div>
       <img
         src={HeaderImage}
-        alt="Clip art rendering of a modern office"
+        alt="Clip-art rendering of a modern office"
         className="header"
       />
     </div>

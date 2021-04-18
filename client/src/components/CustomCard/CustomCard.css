@@ -16,8 +16,15 @@
   grid-area: image;
   max-width: 300px;
   /* background: url(""); */
-
   background-size: contain;
+}
+img {
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+li.list-group-item {
+  border: none;
 }
 .card-text .text {
   grid-area: text;
@@ -84,4 +91,13 @@
   transition: 0.5s ease;
   cursor: pointer;
   margin: 1rem;
+}
+.button {
+  font-family: Barriecito, "cursive";
+  font-size: 1rem;
+  color: #ffffff;
+  background-color:#7677b3;
+  border: none;
+  border-radius: 10px;
+  padding: .75rem;
 }
