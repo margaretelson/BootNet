@@ -32,10 +32,10 @@ const AlumniSearch = () => {
   return (
     <Container>
       <Row className="mySearchRow">
-        <InputGroup className="my-3 mySearchBar">
+        <InputGroup className="my-3 mx-auto mySearchBar">
           <FormControl
-            placeholder="Alumni username"
-            aria-label="Alumni username"
+            placeholder="Search..."
+            aria-label="Search..."
             aria-describedby="basic-addon2"
             onChange={(e) => {
               setSearchString(e.target.value);
@@ -43,11 +43,11 @@ const AlumniSearch = () => {
           />
           <InputGroup.Append>
             <Button
-              className="button"
+              className="mySearchButton"
               onClick={() => {
                 searchAlumni(searchString);
               }}
-              variant="outline-secondary"
+              // variant="outline-secondary"
             >
               Search
             </Button>
