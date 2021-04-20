@@ -19,7 +19,7 @@ if (process.env.NODE_ENV === "production") {
 app.use(bodyParser.json())
 // Add routes, both API and view
 //app.use(require("./routes/api"));
-app.use('/api', require("./routes/api/api"))
+app.use('/api', require("./routes/api/githubUser"))
 
 // Connect to the Mongo DB
 mongoose.connect(
