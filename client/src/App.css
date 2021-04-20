@@ -6,13 +6,25 @@ import /title.png .App {
 width: max-content;  padding: 0%;
   margin-left: -1rem;
 } */
+a {
+  padding: 2rem;
+}
 
 .link {
-  font-size: 1.5rem;
+  font-size: 2rem;
   font-family: Barriecito, "cursive";
   color: #00b2cd;
   align-items: space-around;
   padding: 2rem;
+}
+
+.mySearchRow {
+  display: block !important;
+}
+
+.mySearchBar {
+  max-width: 500px;
+  margin-right: auto;
 }
 
 .nav-container {
@@ -46,19 +58,53 @@ h2 {
 }
 .btn {
   font-family: Barriecito, "cursive" !important;
-  font-size: 1rem !important;
+  font-size: 1.5rem !important;
   color: #ffffff !important;
-  background-color:#7677b3 !important;
+  background-color: #7677b3 !important;
   border: none !important;
-  border-top-right-radius: 10px !important;
-  border-bottom-right-radius: 10px !important;
-  padding: .75rem !important;
+  border-radius: 15px !important;
+  padding: 0.75rem !important;
+  margin-top: 3rem;
+  margin-bottom: 2rem;
+}
+
+.mySearchButton {
+  height: 5rem;
+  font-family: Barriecito, "cursive" !important;
+  font-size: 1.75rem !important;
+  color: #ffffff !important;
+  background-color: #00b2cd !important;
+  border: none !important;
+  border-top-right-radius: 15px !important;
+  border-bottom-right-radius: 15px !important;
+  border-top-left-radius: 0px !important;
+  border-bottom-left-radius: 0px !important;
+  padding-left: 1rem !important;
+  padding-right: 1rem !important;
+  padding-top: 0.5rem !important;
+  padding-bottom: 0.5rem !important;
+  margin-top: 0px !important;
+}
+
+.form-control {
+  height: 5rem !important;
+  font-family: roboto !important;
+  font-weight: 500 !important;
+  font-size: 1.5rem !important;
+  color: darkgrey !important;
+  border-top-left-radius: 15px !important;
+  border-bottom-left-radius: 15px !important;
+  align-items: center;
+  justify-content: center;
 }
 
 InputGroup {
-  background-color:#7677b3 !important;
+  background-color: #7677b3 !important;
   border: none !important;
-padding-top: 2rem;
+  padding-top: 2rem;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
 }
 
 div.mb-3.input-group {

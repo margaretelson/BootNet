@@ -7,8 +7,7 @@ import {
   FormControl,
   Button,
   Container,
-  Row
-
+  Row,
 } from "react-bootstrap";
 
 const AlumniSearch = () => {
@@ -20,9 +19,14 @@ const AlumniSearch = () => {
   // If the call is unsuccessful, producing HTTP 500, 404, or any other error, capture and console log it.
   const searchAlumni = (searchFor) => {
     axios
+<<<<<<< HEAD
       .get("https://api.github.com/users/" + searchFor)
       .then((res) =>
       {
+=======
+      .get("https://api.github.com/search/users?q=" + searchFor)
+      .then((res) => {
+>>>>>>> main
         console.log(res);
         setAlumn(res.data);
       })
@@ -34,22 +38,23 @@ const AlumniSearch = () => {
   // The searchString variable takes the initial value entered inside the parens. The onClick function triggers the searchAlumni GET function, passing in the value of the search string. So onChange takes in "e.target.value" and uses setSearchString as a variable to change and hold the searchString value.
   return (
     <Container>
-      <Row>
-        <InputGroup className="mb-3">
+      <Row className="mySearchRow">
+        <InputGroup className="my-3 mx-auto mySearchBar">
           <FormControl
-            placeholder="Alumni username"
-            aria-label="Alumni username"
+            placeholder="Search..."
+            aria-label="Search..."
             aria-describedby="basic-addon2"
             onChange={(e) => {
               setSearchString(e.target.value);
             }}
           />
           <InputGroup.Append>
-            <Button className="button"
+            <Button
+              className="mySearchButton"
               onClick={() => {
                 searchAlumni(searchString);
               }}
-              variant="outline-secondary"
+              // variant="outline-secondary"
             >
               Search
             </Button>
@@ -57,12 +62,18 @@ const AlumniSearch = () => {
         </InputGroup>
       </Row>
       <div className="d-flex flex-wrap">
+<<<<<<< HEAD
       {alumn &&
       <CustomCard alumn={alumn} />
           
         }
         </div>
         <AllUsers />
+=======
+        {alumn &&
+          alumn.map((user) => <CustomCard key={user.id} alumn={user} />)}
+      </div>
+>>>>>>> main
     </Container>
   );
 };
