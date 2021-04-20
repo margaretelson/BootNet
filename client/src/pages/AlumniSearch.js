@@ -6,8 +6,7 @@ import {
   FormControl,
   Button,
   Container,
-  Row
-
+  Row,
 } from "react-bootstrap";
 
 const AlumniSearch = () => {
@@ -20,8 +19,7 @@ const AlumniSearch = () => {
   const searchAlumni = (searchFor) => {
     axios
       .get("https://api.github.com/search/users?q=" + searchFor)
-      .then((res) =>
-      {
+      .then((res) => {
         console.log(res);
         setAlumn(res.data.items);
       })
@@ -33,22 +31,23 @@ const AlumniSearch = () => {
   // The searchString variable takes the initial value entered inside the parens. The onClick function triggers the searchAlumni GET function, passing in the value of the search string. So onChange takes in "e.target.value" and uses setSearchString as a variable to change and hold the searchString value.
   return (
     <Container>
-      <Row>
-        <InputGroup className="mb-3">
+      <Row className="mySearchRow">
+        <InputGroup className="my-3 mx-auto mySearchBar">
           <FormControl
-            placeholder="Alumni username"
-            aria-label="Alumni username"
+            placeholder="Search..."
+            aria-label="Search..."
             aria-describedby="basic-addon2"
             onChange={(e) => {
               setSearchString(e.target.value);
             }}
           />
           <InputGroup.Append>
-            <Button className="button"
+            <Button
+              className="mySearchButton"
               onClick={() => {
                 searchAlumni(searchString);
               }}
-              variant="outline-secondary"
+              // variant="outline-secondary"
             >
               Search
             </Button>
@@ -56,13 +55,9 @@ const AlumniSearch = () => {
         </InputGroup>
       </Row>
       <div className="d-flex flex-wrap">
-      {alumn
-        &&
-        alumn.map(user=>
-          <CustomCard alumn={user} />
-          ) 
-        }
-        </div>
+        {alumn &&
+          alumn.map((user) => <CustomCard key={user.id} alumn={user} />)}
+      </div>
     </Container>
   );
 };
