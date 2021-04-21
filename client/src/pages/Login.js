@@ -1,7 +1,7 @@
 import React from "react";
-import LoginWrapper from "../../../../../../../React/new apps/my-appa/src/conatctWrapper";
-import FormCard from "../../../../../../../React/new apps/my-appa/src/FormCard";
-import WelcomeCard from "../../../../../../../React/new apps/my-appa/src/WelcomeCard";
+import LoginWrapper from "../components/LoginWrapper";
+import FormCard from "../components/FormCard";
+import WelcomeCard from "../components/WelcomeCard";
 import "./join.css";
 
 const Login = () => {
