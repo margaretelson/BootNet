@@ -1,6 +1,6 @@
 import React from "react";
 
-function index(props) {
+function LoginWrapper(props) {
   return (
     <div>
       <div className="container">
@@ -18,4 +18,4 @@ function index(props) {
   );
 }
 
-export default index;
+export default LoginWrapper;
