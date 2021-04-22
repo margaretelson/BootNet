@@ -1,14 +1,11 @@
 import React, { useState } from "react";
 import "./CustomCard.css";
-<<<<<<< HEAD
-=======
 import { Button, Modal } from "react-bootstrap";
->>>>>>> main
 import axios from "axios";
 
 const CustomCard = ({ alumn }) => {
   const [hover, setHover] = useState(false);
-  const [alumnDetail, setAlumnDetail] = useState(null);
+  const [alumnDetail, setAlumnDetail] = useState({});
   // Modal functions
   const [show, setShow] = useState(false);
 
@@ -35,42 +32,17 @@ const CustomCard = ({ alumn }) => {
   // };
 
   //Function to save user profile once MongoDB is set up
-<<<<<<< HEAD
-  function handleSave()
-  {
-    const userAlumni = {
-      avatar: alumn.avatar_url,
-      name: alumn.name,
-      bio: alumn.bio,
-      companyName: alumn.company,
-      hireable: alumn.hireable,
-      portfolio: alumn.blog,
-      github: alumn.url,
-    }
-    axios.post("/api/users", userAlumni)
+  const handleSave = () => {
+    axios.post("/api/users", alumnDetail)
       .then(res =>
       {
         if (res)
         {
           alert("User profile was saved")
-=======
-  function handleSave() {
-    console.log(alumnDetail);
-    fetch("backend URL", {
-      method: "POST",
-      headers: {
-        "Content-type": "application/json",
-      },
-      body: JSON.stringify(alumnDetail),
-    })
-      .then((data) => data.json())
-      .then((res) => {
-        if (res) {
-          alert("User profile was saved");
->>>>>>> main
         }
-      });
-  }
+      })
+  };
+  
   //This code limits the user profile to 50 characters. If the profile is >50 characters, an ellipsis appears at the end, cutting the profile short. The full profile can be seen by hovering over the card.
   return (
     <div

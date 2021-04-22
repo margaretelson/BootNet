@@ -12,21 +12,15 @@ import {
 
 const AlumniSearch = () => {
   const [searchString, setSearchString] = useState("");
-  const [alumn, setAlumn] = useState(null);
+  const [alumn, setAlumn] = useState([]);
 
   // Make API call to GET alumni data for a GitHub user.
   // If successful(200), console log the response(res) and capture it in state using "setAlumniData". (So "setAlumniData" is a value that holds that API res)
   // If the call is unsuccessful, producing HTTP 500, 404, or any other error, capture and console log it.
   const searchAlumni = (searchFor) => {
     axios
-<<<<<<< HEAD
-      .get("https://api.github.com/users/" + searchFor)
-      .then((res) =>
-      {
-=======
       .get("https://api.github.com/search/users?q=" + searchFor)
       .then((res) => {
->>>>>>> main
         console.log(res);
         setAlumn(res.data);
       })
@@ -62,18 +56,10 @@ const AlumniSearch = () => {
         </InputGroup>
       </Row>
       <div className="d-flex flex-wrap">
-<<<<<<< HEAD
-      {alumn &&
-      <CustomCard alumn={alumn} />
-          
-        }
-        </div>
-        <AllUsers />
-=======
         {alumn &&
           alumn.map((user) => <CustomCard key={user.id} alumn={user} />)}
       </div>
->>>>>>> main
+      {/* <AllUsers /> */}
     </Container>
   );
 };
