@@ -1,12 +1,12 @@
 :root {
-    --brandColor: hsl(213, 89%, 33%);
+  --brandColor: hsl(208, 85%, 46%);
     --background: rgb(247, 247, 247);
     --textDark: hsla(0, 0%, 0%, 0.66);
     --textLight: hsla(0, 0%, 0%, 0.33);
   }
   
   body  {
-    background: var(--background);
+    background: linear-gradient(to right top, #3299e8, #ebc36c);
     height: 100vh;
     color: var(--textDark);
   }
@@ -17,7 +17,11 @@
   
   .register {
     margin-top: 5rem;
-    background: white;
+    background: linear-gradient(
+      to right bottom,
+      rgba(255, 255, 255, 0.7),
+      rgba(255, 255, 255, 0.3)
+    );
     border-radius: 10px;
   }
   
