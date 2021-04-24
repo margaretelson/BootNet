@@ -3,9 +3,9 @@
 [![stars - readme-generator](https://img.shields.io/github/stars/melissakinsey/readme-generator?style=social)](https://github.com/melissakinsey/readme-generator)
 [![forks - readme-generator](https://img.shields.io/github/forks/melissakinsey/readme-generator?style=social)](https://github.com/melissakinsey/readme-generator)
 
-- [Description](##Description)
-- [User Story](##User_Story)
-- [Installation](##Installation)
+- [Description](##DESCRIPTION)
+- [Contributors](##CONTRIBUTORS)
+- [Installation](##SOURCE_CODE_&_DEMO)
 - [Usage](##Usage)
 - [Features](##Features)
 - [Technical Specs](##Technical_Specs)
@@ -55,7 +55,7 @@ The four students listed below collaborated on this project. Ping us with questi
 - Email: [kinsey.melissa@gmail.com](mailto:kinsey.melissa@gmail.com)
 - LinkedIn: [linkedin.com/melissajaynekinsey](https://www.linkedin.com/in/melissajaynekinsey/)
 
-### Project Repo & Demo
+## SOURCE CODE & DEMO
 
 The [code for this app](https://github.com/margaretelson/BootNet) is housed on GitHub.
 
@@ -112,18 +112,23 @@ SEARCH BY COMPANY
 SEARCH BY LANGUAGE OR TOOL
 
 - Search for bootcamp grads who are using, say, React
-- Search for deceased grads (R.I.P.) who attempted to deploy with Heroku
+- Search for deceased grads who attempted to deploy with Heroku
+  (R.I.P., my friends!)
 
 SEARCH USING BOOLEANS (as described under "Usage," above)
 
 Regardless of how you search, the app will return a list of accounts for both people and organizations. They're listed in the order in which they signed up on GitHub.
 
-![bootnetwork-app](assets/lorem-ipsum.png)
+![BootNetwork UI](./client/src/assets/results-ui.png)
 
 ## TECHNICAL SPECS
 
 - Built with React
 - Requires XX authentication
+  If the authenticated user is authenticated through basic authentication or OAuth with the user scope, then the response lists public and private profile information.
+
+If the authenticated user is authenticated through OAuth without the user scope, then the response lists only public profile information.
+
 - Uses MongoDB to store database records
 - Uses npm XXX
 - Styled with HTML/CSS and React-Bootstrap
@@ -146,7 +151,7 @@ Regardless of how you search, the app will return a list of accounts for both pe
 
 A GET request to the GitHub API calls the "users" endpoint (https://api.github.com/users) to return data, as in the response below:
 
-![GitHub API sample response](/client/src/Assets/github-data-in-console.png)
+![GitHub API sample response](/client/src/assets/sample-response.png)
 
 ### MongoDB
 
@@ -159,10 +164,10 @@ In addition to our app, we created other ways for people to interact with BootNe
 ###LinkedIn Page
 We created [a BootNet page on LinkedIn](https://www.linkedin.com/company/bootnetwork/?viewAsMember=true) to raise awareness and encourage people to check out our app.
 
-![LinkedIn page for BootNetwork](/client/public/linkedin.png)
+![LinkedIn page for BootNetwork](/client/src/assets/linkedin.png)
 
 ###Slack Channel
-We also created a ![Slack channel](/client/src/Assets/slack.png) @BootNetwork.
+We also created a ![Slack channel](/client/src/assets/slack.png) @BootNetwork.
 
 ## CREDITS
 
