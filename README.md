@@ -156,6 +156,10 @@ A GET request to the GitHub API calls the "users" endpoint (https://api.github.c
 
 ### React-Bootstrap
 
+### Passport
+
+![Passport logo](/client/src/assets/passport.png)
+
 ## INTEGRATIONS
 
 In addition to our app, we created other ways for people to interact with BootNet.

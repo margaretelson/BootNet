@@ -1,83 +1,83 @@
 :root {
-  --brandColor: hsl(208, 85%, 46%);
-    --background: rgb(247, 247, 247);
-    --textDark: hsla(0, 0%, 0%, 0.66);
-    --textLight: hsla(0, 0%, 0%, 0.33);
-  }
-  
-  body  {
-    background: linear-gradient(to right top, #3299e8, #ebc36c);
-    height: 100vh;
-    color: var(--textDark);
-  }
-  
-  .field:not(:last-child) {
-    margin-bottom: 2rem;
-  }
-  
-  .register {
-    margin-top: 5rem;
-    background: linear-gradient(
-      to right bottom,
-      rgba(255, 255, 255, 0.7),
-      rgba(255, 255, 255, 0.3)
-    );
-    border-radius: 10px;
-  }
-  
-  .left,
-  .right {
-    padding: 4.5rem;
-  }
-  
-  .left {
-    border-right: 2px solid var(--background);
-  }
-  
-  .left .title {
-    font-weight: 800;
-    letter-spacing: -2px;
-  }
-  
-  .left .colored {
-    color: var(--brandColor);
-    font-weight: 500;
-    margin-top: 1rem !important;
-    letter-spacing: -1px;
-  }
-  
-  .left p {
-    color: var(--textLight);
-    font-size: 1.15rem;
-  }
-  
-  .right .title {
-    font-weight: 800;
-    letter-spacing: -1px;
-  }
-  
-  .right .description {
-    margin-top: 1rem;
-    margin-bottom: 1rem !important;
-    color: var(--textLight);
-    font-size: 1.15rem;
-  }
-  
-  .right small {
-    color: var(--textLight);
-  }
-  
-  input {
-    font-size: 1rem;
-  }
-  
-  input:focus {
-    border-color: var(--brandColor) !important;
-    box-shadow: 0 0 0 1px var(--brandColor) !important;
-  }
-  
-  .fab,
-  .fas {
-    color: var(--textLight);
-    margin-right: 1rem;
-  }
+  --brandColor: #00b3cd;
+  --background: rgb(247, 247, 247);
+  --textDark: hsla(0, 0%, 0%, 0.66);
+  --textLight: hsla(0, 0%, 0%, 0.33);
+}
+
+body {
+  background: linear-gradient(to right top, #00b2cd7d, #feab05b5);
+  height: 100vh;
+  color: var(--textDark);
+}
+
+.field:not(:last-child) {
+  margin-bottom: 2rem;
+}
+
+.register {
+  margin-top: 5rem;
+  background: linear-gradient(
+    to right bottom,
+    rgba(255, 255, 255, 0.7),
+    rgba(255, 255, 255, 0.3)
+  );
+  border-radius: 10px;
+}
+
+.left,
+.right {
+  padding: 4.5rem;
+}
+
+.left {
+  border-right: 2px solid var(--background);
+}
+
+.left .title {
+  font-weight: 800;
+  letter-spacing: -2px;
+}
+
+.left .colored {
+  color: var(--brandColor);
+  font-weight: 500;
+  margin-top: 1rem !important;
+  letter-spacing: -1px;
+}
+
+.left p {
+  color: var(--textLight);
+  font-size: 1.15rem;
+}
+
+.right .title {
+  font-weight: 800;
+  letter-spacing: -1px;
+}
+
+.right .description {
+  margin-top: 1rem;
+  margin-bottom: 1rem !important;
+  color: var(--textLight);
+  font-size: 1.15rem;
+}
+
+.right small {
+  color: var(--textLight);
+}
+
+input {
+  font-size: 1rem;
+}
+
+input:focus {
+  border-color: var(--brandColor) !important;
+  box-shadow: 0 0 0 1px var(--brandColor) !important;
+}
+
+.fab,
+.fas {
+  color: var(--textLight);
+  margin-right: 1rem;
+}
