@@ -6,8 +6,8 @@
 }
 
 body {
-  background: linear-gradient(to right top, #00b2cd7d, #feab05b5);
-  height: 100vh;
+  background: linear-gradient(to right top, #00b2cd67, #feab05b5);
+  min-height: 100vh;
   color: var(--textDark);
 }
 
@@ -16,14 +16,25 @@ body {
 }
 
 .register {
-  margin-top: 5rem;
-  background: linear-gradient(
+  margin: 5rem 0;
+  /* background: linear-gradient(
     to right bottom,
     rgba(255, 255, 255, 0.7),
     rgba(255, 255, 255, 0.3)
-  );
+  ); */
   border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.5);
 }
+
+/* .register::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  opacity: 0.5;
+} */
 
 .left,
 .right {
@@ -80,4 +91,10 @@ input:focus {
 .fas {
   color: var(--textLight);
   margin-right: 1rem;
+}
+
+@media (max-width: 768px) {
+  .left {
+    border-right: none;
+  }
 }
