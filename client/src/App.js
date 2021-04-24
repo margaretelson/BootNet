@@ -1,6 +1,7 @@
 import React from "react";
 import "./App.css";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import Dashboard from "./pages/Dashboard";
 import AlumniSearch from "./pages/AlumniSearch";
 import Navigation from "./components/Navigation/Navigation";
 import Signup from "./pages/Signup"
@@ -9,7 +10,6 @@ function App() {
   return (
     <Router className="App">
       <Navigation />
-  
         <Route path="/search">
           <AlumniSearch />
         </Route>
@@ -18,6 +18,9 @@ function App() {
         </Route>
         <Route exact path="/login">
           <Login />
+        </Route>
+        <Route path="/dashboard">
+          <Dashboard />
         </Route>
     </Router>
   );
