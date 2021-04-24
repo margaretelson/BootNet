@@ -3,7 +3,7 @@ const githubUserController = require("../../controllers/githubUserController");
 
 // Matches with "/api/posts"
 router
-  .route("/users")
+  .route("/")
   .get(githubUserController.findAll)
   .post(githubUserController.create);
 

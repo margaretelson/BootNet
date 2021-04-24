@@ -1,14 +1,28 @@
 const express = require("express");
 const mongoose = require("mongoose");
-const routes = require("./routes/api/api");
+const routes = require("./routes");
 const bodyParser = require('body-parser')
-
 const app = express();
+const session = require('express-session');
+const passport = require('passport');
+
+ 
 const PORT = process.env.PORT || 3001;
+
 
 // Define middleware here
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
+// Express Session
+app.use(session({
+  secret: 'secret',
+  saveUninitialized: true,
+  resave: true
+}));
+// Passport init
+app.use(passport.initialize());
+app.use(passport.session());
+
 
 // Serve up static assets (usually on heroku)
 if (process.env.NODE_ENV === "production") {
@@ -19,7 +33,7 @@ if (process.env.NODE_ENV === "production") {
 app.use(bodyParser.json())
 // Add routes, both API and view
 //app.use(require("./routes/api"));
-app.use('/api', require("./routes/api/githubUser"))
+app.use(routes)
 
 // Connect to the Mongo DB
 mongoose.connect(

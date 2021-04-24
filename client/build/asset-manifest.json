@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/static/css/main.8c6a5534.chunk.css",
+    "main.js": "/static/js/main.f6ee22b4.chunk.js",
+    "main.js.map": "/static/js/main.f6ee22b4.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.432e1ea0.js",
+    "runtime-main.js.map": "/static/js/runtime-main.432e1ea0.js.map",
+    "static/css/2.4c97ca4f.chunk.css": "/static/css/2.4c97ca4f.chunk.css",
+    "static/js/2.e785a846.chunk.js": "/static/js/2.e785a846.chunk.js",
+    "static/js/2.e785a846.chunk.js.map": "/static/js/2.e785a846.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/2.4c97ca4f.chunk.css.map": "/static/css/2.4c97ca4f.chunk.css.map",
+    "static/css/main.8c6a5534.chunk.css.map": "/static/css/main.8c6a5534.chunk.css.map",
+    "static/js/2.e785a846.chunk.js.LICENSE.txt": "/static/js/2.e785a846.chunk.js.LICENSE.txt",
+    "static/media/BootNetwork-logo.2414e879.png": "/static/media/BootNetwork-logo.2414e879.png",
+    "static/media/header.a21996d8.png": "/static/media/header.a21996d8.png",
+    "static/media/logo-sans-title.45f1cf6b.png": "/static/media/logo-sans-title.45f1cf6b.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.432e1ea0.js",
+    "static/css/2.4c97ca4f.chunk.css",
+    "static/js/2.e785a846.chunk.js",
+    "static/css/main.8c6a5534.chunk.css",
+    "static/js/main.f6ee22b4.chunk.js"
+  ]
+}
