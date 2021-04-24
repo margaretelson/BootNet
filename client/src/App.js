@@ -10,7 +10,6 @@ function App() {
   return (
     <Router className="App">
       <Navigation />
-
       <Route path="/search">
         <AlumniSearch />
       </Route>

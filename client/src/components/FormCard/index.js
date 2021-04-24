@@ -24,7 +24,7 @@ function FormCard(props) {
           <br />
           <small>
             <em>
-              <a href="route">
+              <a href="signup">
                 <br />
                 Sing up
               </a>

@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import axios from "axios";
 import CustomCard from "../components/CustomCard";
+import AllUsers from "../components/AllUsers";
 import {
   InputGroup,
   FormControl,
@@ -11,7 +12,7 @@ import {
 
 const AlumniSearch = () => {
   const [searchString, setSearchString] = useState("");
-  const [alumn, setAlumn] = useState(null);
+  const [alumn, setAlumn] = useState([]);
 
   // Make API call to GET alumni data for a GitHub user.
   // If successful(200), console log the response(res) and capture it in state using "setAlumniData". (So "setAlumniData" is a value that holds that API res)
@@ -20,7 +21,7 @@ const AlumniSearch = () => {
     axios
       .get("https://api.github.com/search/users?q=" + searchFor)
       .then((res) => {
-        console.log(res);
+        console.log("The response is", res);
         setAlumn(res.data.items);
       })
       .catch((err) => console.log(err));
@@ -55,9 +56,10 @@ const AlumniSearch = () => {
         </InputGroup>
       </Row>
       <div className="d-flex flex-wrap">
-        {alumn &&
-          alumn.map((user) => <CustomCard key={user.id} alumn={user} />)}
+        {alumn ?
+          alumn.map((user) => <CustomCard key={user.id} alumn={user} />): "No results shown"}
       </div>
+      {/* <AllUsers /> */}
     </Container>
   );
 };

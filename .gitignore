@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 node_modules
 package-lock.json
 
@@ -6,4 +7,8 @@ client/node_modules
 .env
 package-lock.json
 client/package-lock.json
-
+.prettierrc
+worksheet.linkedin.txt
+=======
+**node_modules
+>>>>>>> 5bd807812007f00fcc8828692cb394eeac7c4640
