@@ -1,15 +1,17 @@
 import React from "react";
-import ContactWrapper from "../../../../../../../React/new apps/my-appa/src/conatctWrapper";
-import FormCard from "../../../../../../../React/new apps/my-appa/src/FormCard";
-import WelcomeCard from "../../../../../../../React/new apps/my-appa/src/WelcomeCard";
-import "./Login.css";
+import LoginWrapper from "../components/LoginWrapper";
+import FormCard from "../components/FormCard";
+import WelcomeCard from "../components/WelcomeCard";
+import "./join.css"
+
+
 
 const Login = () => {
   return (
-<ContactWrapper>
-<WelcomeCard />
-<FormCard/>
-</ContactWrapper>
+<LoginWrapper>
+  <WelcomeCard/>
+  <FormCard/>
+</LoginWrapper>
 
   );
 };

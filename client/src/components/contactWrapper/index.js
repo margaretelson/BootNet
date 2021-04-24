@@ -7,7 +7,7 @@ function index(props) {
         <div className="columns is-multiline">
           <div className="column is-8 is-offset-2 register">
             <div className="columns">
-           {props.Children}
+           {props.children}
 
               </div>
             </div>
