@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "./CustomCard.css";
 import { Button, Modal } from "react-bootstrap";
 import axios from "axios";
-import { fab } from "@fortawesome/free-brands-svg-icons";
+// import { fab } from "@fortawesome/free-brands-svg-icons";
 
 const CustomCard = ({ alumn }) => {
   const [hover, setHover] = useState(false);
