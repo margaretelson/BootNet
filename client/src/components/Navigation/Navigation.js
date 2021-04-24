@@ -21,6 +21,9 @@ const Navigation = () => {
           <Link className="link" to="/login">
             Log In
           </Link>
+          <Link className="link" to="/logout">
+            Log Out
+          </Link>
         </ul>
       </div>
 
