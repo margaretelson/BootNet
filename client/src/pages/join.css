@@ -6,7 +6,7 @@
 }
 
 body {
-  background: linear-gradient(to right top, #00b2cd67, #feab05b5);
+  background: linear-gradient(to right top, #00b2cd7d, #feab05b5);
   min-height: 100vh;
   color: var(--textDark);
 }

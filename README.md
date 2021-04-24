@@ -142,8 +142,6 @@ If the authenticated user is authenticated through OAuth without the user scope,
 - Lorem ipsum
 - Lorem ipsum
 
-## USER STORY
-
 ## TECHNOLOGIES
 
 ### GitHub API
@@ -171,6 +169,12 @@ We created [a BootNet page on LinkedIn](https://www.linkedin.com/company/bootnet
 
 ###Slack Channel
 We also created a ![Slack channel](/client/src/assets/slack.png) @BootNetwork.
+
+## FUTURE DIRECTIONS
+
+In the future, we'd like to develop a more sophisticated dashboard. Mateo developed a UI that could eventually be programmed to show
+
+!(Future developments UI)[/client/src/assets/future-dev.png]
 
 ## CREDITS
 

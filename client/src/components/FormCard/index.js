@@ -9,13 +9,13 @@ function FormCard(props) {
         <form>
           <div class="field">
             <div class="control">
-              <input class="input is-medium" type="text" placeholder="Name" />
+              <input class="input is-medium" type="text" placeholder="Username" />
             </div>
           </div>
 
           <div class="field">
             <div class="control">
-              <input class="input is-medium" type="email" placeholder="Email" />
+              <input class="input is-medium" type="email" placeholder="Password" />
             </div>
           </div>
           <button class="button is-block is-info is-fullwidth is-medium">
