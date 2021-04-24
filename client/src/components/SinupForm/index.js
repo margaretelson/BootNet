@@ -28,6 +28,7 @@ function SinupForm() {
           <small><em><a href="route"><br/>Log in</a></em></small>
         </form>
       </div>
+    
     )
 }
 
