@@ -6,20 +6,32 @@ const AllUsers = () => {
     const [users, setUsers] = useState([])
     useEffect( () => {
         console.log(users)
-        if (users.length === 0){ 
     axios.get("/api/users")
-    .then( (users)=> {
-        console.log(users)
-        setUsers(users.data)
+    .then((response)=> {
+        console.log(response)
+        setUsers(response.data)
     })
-}
-    },[users])
+}, [])
+
     return(
         <div>
             {users.length > 0 &&
             users.map((user) => {
+                let userDetail = {
+                    avatar_url: user.avatar_url,
+                    login: user.login,
+                    url: user.url,
+                    hireable: user.hireable,
+                    bio: user.bio,
+                    company: user.company,
+                    email: user.email
+
+                }
+                console.log(userDetail)
+
                 return(
-                    <CustomCard alumn={user} />
+                    <CustomCard alumn={userDetail}
+                    />
                 )
             })}
         </div>

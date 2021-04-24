@@ -1,7 +1,7 @@
 import React from "react";
 import TitleImage from "../assets/BootNetwork-logo.png";
 import { Container } from "react-bootstrap";
-import AllUsers from "../components/AllUsers"
+import AllUsers from "../components/AllUsers";
 // import { LinkedinCompanyProfile } from "react-social-plugins";
 
 const Dashboard = () => {
@@ -19,7 +19,8 @@ const Dashboard = () => {
         format="inline" // Or "hover"
         text="BootNetwork" // text to show in "hover" format */}
       {/* /> */}
-      <AllUsers />
+      <AllUsers 
+      />
        
     )
     </Container>

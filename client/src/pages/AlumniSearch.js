@@ -21,8 +21,8 @@ const AlumniSearch = () => {
     axios
       .get("https://api.github.com/search/users?q=" + searchFor)
       .then((res) => {
-        console.log(res);
-        setAlumn(res.data);
+        console.log("The response is", res);
+        setAlumn(res.data.items);
       })
       .catch((err) => console.log(err));
   };
@@ -56,8 +56,8 @@ const AlumniSearch = () => {
         </InputGroup>
       </Row>
       <div className="d-flex flex-wrap">
-        {alumn &&
-          alumn.map((user) => <CustomCard key={user.id} alumn={user} />)}
+        {alumn ?
+          alumn.map((user) => <CustomCard key={user.id} alumn={user} />): "No results shown"}
       </div>
       {/* <AllUsers /> */}
     </Container>

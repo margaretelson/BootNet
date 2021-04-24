@@ -3,15 +3,15 @@ import axios from "axios";
 import CustomCard from "../CustomCard"
 import AllUsers from "../AllUsers"
 
-const SearchResults = () => {
+const SearchResults = ({users}) => {
     return(
         <div>
-            {users.length > 0 &&
+            {/* {users.length > 0 &&
             users.map((user) => {
                 return(
                     <CustomCard />
                 )
-            })}
+            })} */}
         </div>
     )
 }

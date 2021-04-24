@@ -10,10 +10,8 @@ const CustomCard = ({ alumn }) => {
   const [show, setShow] = useState(false);
 
   const handleClose = () => {
-    setAlumnDetail(null);
     setShow(false);
   };
-  const handleShow = () => setShow(true);
 
   const getAlumnDetail = (url) => {
     axios
@@ -22,7 +20,7 @@ const CustomCard = ({ alumn }) => {
         console.log(res);
         console.log(res.data);
         setAlumnDetail(res.data);
-        handleShow(true);
+        setShow(true);
       })
       .catch((err) => console.log(err));
   };
@@ -42,6 +40,19 @@ const CustomCard = ({ alumn }) => {
         }
       })
   };
+
+  const handleDelete = () => {
+    axios.delete("/api/users", alumnDetail)
+    .then(res =>
+      {
+        if (res)
+        {
+          alert("User profile was deleted")
+        }
+      })
+  }
+  // console.log(alumn)
+  // console.log(alumnDetail)
   
   //This code limits the user profile to 50 characters. If the profile is >50 characters, an ellipsis appears at the end, cutting the profile short. The full profile can be seen by hovering over the card.
   return (
@@ -55,7 +66,7 @@ const CustomCard = ({ alumn }) => {
         <div className="card-text">
           {/* <h3>Repo:</h3> */}
           <h3>{alumn.login}</h3>
-          {alumnDetail === null ? (
+          {alumnDetail ? (
             <Button
               onClick={() => {
                 getAlumnDetail(alumn.url);
@@ -71,7 +82,7 @@ const CustomCard = ({ alumn }) => {
               </Modal.Header>
               <Modal.Body>
                 <div className="card-text">
-                  <h2>{alumnDetail.name}</h2>
+                  <h2>{alumn.login}</h2>
                   <h3>Email</h3>
                   {alumnDetail.email ? (
                     <p>{alumnDetail.email}</p>
@@ -102,9 +113,11 @@ const CustomCard = ({ alumn }) => {
                   <button className="button" onClick={handleSave}>
                     Save Profile
                   </button>
-                  {/* <button className="button" onClick={closeDetails}>
-                    X Close
-                  </button> */}
+                </li>
+                <li className="list-group-item">
+                  <button className="button" onClick={handleDelete}>
+                    Delete
+                  </button>
                 </li>
               </Modal.Footer>
             </Modal>
