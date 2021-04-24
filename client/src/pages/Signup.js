@@ -1,6 +1,6 @@
 import React, {useState} from 'react'
 import ContactWrapper from '../components/contactWrapper';
-import SignupForm from '../components/SinupForm';
+import SignupForm from '../components/SignupForm';
 import "./join.css";
 import api from "../utils/api"
 
