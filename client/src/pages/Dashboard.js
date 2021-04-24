@@ -1,10 +1,26 @@
 import React from "react";
-import TitleImage from "../assets/BootNetwork-logo.png";
+import  { useState } from 'react';
 import { Container } from "react-bootstrap";
+<<<<<<< HEAD
 // import AllUsers from "../components/AllUsers";
+=======
+import AllUsers from "../components/AllUsers";
+import Dashboardmain from "../components/DashboardALL";
+import UsersCard from "../components/UsersCard";
+>>>>>>> 10b060f52a91bb439d508458b9cef35de9056fec
 
+
+/// get request to get the saved results
+
+
+
+
+//display results.map()
+//
 const Dashboard = () => {
+  const [results,setResults] = useState([])
   return (
+<<<<<<< HEAD
     <Container>
       <div className="title-image">
         <img src={TitleImage} alt="BootNetwork" />
@@ -19,6 +35,16 @@ const Dashboard = () => {
         text="BootNetwork" // text to show in "hover" format */}
       {/* /> */}
     </Container>
+=======
+    <Dashboardmain>
+      {results.map(result=>
+<AllUsers/>
+    
+      )}
+
+    </Dashboardmain>
+
+>>>>>>> 10b060f52a91bb439d508458b9cef35de9056fec
   );
 };
 
