@@ -4,6 +4,8 @@ import FormCard from "../components/FormCard";
 import WelcomeCard from "../components/WelcomeCard";
 import "./join.css"
 
+
+
 const Login = () => {
   return (
 <LoginWrapper>
