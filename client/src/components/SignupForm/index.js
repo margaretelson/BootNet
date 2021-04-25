@@ -37,10 +37,10 @@ function SinupForm(props) {
           <div class="control">
             <input
               class="input is-medium"
-              type="email"
+              type="username"
               placeholder="username"
               name="username"
-              value={props.userInfo.email}
+              value={props.userInfo.username}
               onChange={props.handleInputChange}
               placeholder="Username"
             />
@@ -65,12 +65,12 @@ function SinupForm(props) {
               type="password"
               placeholder="Confirm Password"
               name="password2"
-              value={props.userInfo.password}
+              value={props.userInfo.password2}
               onChange={props.handleInputChange}
             />
           </div>
         </div>
-        <button class="button is-block is-info is-fullwidth is-medium">
+        <button class="button is-block is-info is-fullwidth is-medium" onClick={props.handleSave}>
           Sign Up
         </button>
         <br />
@@ -78,14 +78,6 @@ function SinupForm(props) {
           <em>
             We're a network of bootcamp grads helping other bootcamp grads find
             job opportunities. Let's stick together and kick some booty!
-          </em>
-        </small>
-        <small>
-          <em>
-            <a href="route">
-              <br />
-              Log in
-            </a>
           </em>
         </small>
       </form>
