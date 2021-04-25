@@ -59,10 +59,8 @@ const CustomCard = ({ alumn }) => {
       onMouseOver={() => setHover(true)}
       onMouseLeave={() => setHover(false)}
     >
-      {/* <div className="card-image"> */}
       <img width="150" src={alumn.avatar_url} alt="BootNetwork Member" />
       <div className="card-text">
-        {/* <h3>Repo:</h3> */}
         <h3>{alumn.login}</h3>
         {alumnDetail ? (
           <Button
@@ -133,7 +131,6 @@ const CustomCard = ({ alumn }) => {
           GitHub
         </a>
       </div>
-      {/* </div> */}
     </div>
   );
 };

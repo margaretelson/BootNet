@@ -1,3 +1,5 @@
+/* GENERAL STYLES */
+
 body {
   margin-right: 0;
   padding: 0;
@@ -16,10 +18,14 @@ code {
   display: flex;
 }
 
+/* HEADS */
+
 .header {
   width: 100%;
   align-items: center;
 }
+
+/* TITLES */
 
 .title.is-4 {
   color: #ffffff;
@@ -36,17 +42,21 @@ code {
   margin-bottom: 3.5rem;
 }
 
+/* BUTTONS */
+
 button.is-block.is-info.is-fullwidth.is-medium {
   background-color: #fea905;
   font-size: 28px;
 }
 
+/* TEXT */
+
 .signup {
   font-family: "Open Sans", sans-serif;
   font-weight: 300;
   font-style: normal;
-  font-size: 30px;
-  color: #ffffff;
+  font-size: 28px;
+  color: #a44823;
 }
 
 .booty {
@@ -54,4 +64,10 @@ button.is-block.is-info.is-fullwidth.is-medium {
   font-weight: 300 !important;
   font-size: 24px !important;
   color: #ffffff !important;
+}
+
+/* ICON */
+.signup-icon {
+  height: 35px;
+  width: 45px;
 }
