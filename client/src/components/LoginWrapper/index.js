@@ -5,15 +5,12 @@ function LoginWrapper(props) {
     <div>
       <div className="container">
         <div className="columns is-multiline">
-          <div className="column is-8 is-offset-2 register">
-            <div className="columns">
-           {props.children}
-              </div>
-            </div>
+          <div className="column register">
+            <div className="columns">{props.children}</div>
           </div>
         </div>
       </div>
-
+    </div>
   );
 }
 
