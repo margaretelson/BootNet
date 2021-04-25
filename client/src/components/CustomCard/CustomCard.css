@@ -1,4 +1,8 @@
+/* FONTS */
+
 @import url("https://fonts.googleapis.com/css2?family=Barriecito&display=swap");
+
+/* CARDS */
 
 .card {
   display: grid;
@@ -11,33 +15,32 @@
   font-size: 20px;
   text-align: center;
   max-width: 450px;
+  border-radius: 20px !important;
 }
+
 .card-image .image {
   grid-area: image;
   max-width: 300px;
   /* background: url(""); */
   background-size: contain;
-}
-img {
-  border-radius: 15px;
-  border-bottom-left-radius: 10px;
+  padding-top: 1rem;
 }
 
-li.list-group-item {
-  border: none;
-}
 .card-text .text {
   grid-area: text;
   margin: 1rem;
   font-size: 2rem;
 }
+
 .card-links {
   grid-area: links;
 }
+
 .card-text .date {
   color: rgb(255, 7, 110);
   font-size: 13px;
 }
+
 .card-text p {
   color: #000000;
   font-size: 1.6rem;
@@ -53,51 +56,90 @@ li.list-group-item {
   padding-top: 1rem;
   color: #00b3cd;
 }
+
 .card-text h3 {
   margin-top: 0px;
   font-family: Barriecito, "cursive";
-  font-size: 2.25rem;
+  font-size: 2rem;
   color: #fea905;
   text-align: left;
   margin-left: 1rem;
 }
+
 .card-text h4 {
   margin-top: 0px;
   font-size: 28px;
 }
+
 .card-links {
   grid-area: links;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr;
   background: #00b3cd;
+  color: white;
+  width: 100%;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
 }
+
 .card-links .link {
   display: flex;
   align-items: center;
-  justify-content: center;
-  flex-direction: column;
+  justify-content: space-around;
   color: white;
   padding: 0.5rem;
-  font-family: roboto;
-  font-weight: bold;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
   font-size: 1.5rem;
+  width: 60%;
 }
+
+.card-links .link img {
+  width: 26px;
+}
+
 .card:hover {
   transform: scale(1.15);
   box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.6);
 }
+
 .card {
   transition: 0.5s ease;
   cursor: pointer;
   margin: 1rem;
+  width: 245px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
 }
+
+/* IMAGES */
+
+img {
+  border-radius: 20px;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+/* LISTS */
+
+li.list-group-item {
+  border: none;
+}
+
+/* BUTTONS */
+
 .button {
   font-family: Barriecito, "cursive";
-  font-size: 1rem;
   color: #ffffff;
   background-color: #7677b3;
   border: none;
   border-radius: 10px;
   padding: 0.75rem;
+}
+
+.btn-primary {
+  font-size: 1.25rem !important;
 }
