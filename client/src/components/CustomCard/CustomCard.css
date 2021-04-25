@@ -11,16 +11,19 @@
   font-size: 20px;
   text-align: center;
   max-width: 450px;
+  border-radius: 20px !important;
 }
 .card-image .image {
   grid-area: image;
   max-width: 300px;
   /* background: url(""); */
   background-size: contain;
+  padding-top: 1rem;
 }
 img {
-  border-radius: 15px;
-  border-bottom-left-radius: 10px;
+  border-radius: 20px;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 
 li.list-group-item {
@@ -56,7 +59,7 @@ li.list-group-item {
 .card-text h3 {
   margin-top: 0px;
   font-family: Barriecito, "cursive";
-  font-size: 2.25rem;
+  font-size: 2rem;
   color: #fea905;
   text-align: left;
   margin-left: 1rem;
@@ -71,7 +74,10 @@ li.list-group-item {
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr;
   background: #00b3cd;
+  color: white;
   width: 100%;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
 }
 .card-links .link {
   display: flex;
@@ -79,13 +85,13 @@ li.list-group-item {
   justify-content: space-around;
   color: white;
   padding: 0.5rem;
-  font-family: roboto;
-  font-weight: bold;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
   font-size: 1.5rem;
   width: 60%;
 }
 .card-links .link img {
-  width: 30px;
+  width: 26px;
 }
 .card:hover {
   transform: scale(1.15);
@@ -103,14 +109,12 @@ li.list-group-item {
 }
 .button {
   font-family: Barriecito, "cursive";
-  font-size: 1rem;
   color: #ffffff;
   background-color: #7677b3;
   border: none;
   border-radius: 10px;
   padding: 0.75rem;
 }
-
-/* .icon {
-  color: #ffffff;
-} */
+.btn-primary {
+  font-size: 1.25rem !important;
+}

@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "./CustomCard.css";
 import { Button, Modal } from "react-bootstrap";
 import axios from "axios";
-import git from "../../assets/github-brands.svg";
+import git from "../../assets/github-brands.png";
 //import { fab } from "@fortawesome/free-brands-svg-icons";
 
 const CustomCard = ({ alumn }) => {
@@ -129,7 +129,7 @@ const CustomCard = ({ alumn }) => {
           target="_blank"
           rel="noreferrer"
         >
-          <img src={git} alt="git logo" class="icon" />
+          <img src={git} alt="GitHub logo" />
           GitHub
         </a>
       </div>

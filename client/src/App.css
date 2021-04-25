@@ -2,14 +2,15 @@
 import /title.png .App {
   align-items: center;
 }
-/* .header {
-width: max-content;  padding: 0%;
-  margin-left: -1rem;
-} */
+
 a {
   padding: 2rem;
 }
 
+p {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300 !important;
+}
 .link {
   font-size: 2rem;
   font-family: Barriecito, "cursive";
@@ -18,13 +19,18 @@ a {
   padding: 0 2rem;
 }
 
-.mySearchRow {
-  display: block !important;
+div.column.register {
+  border-radius: 20px !important;
+  background-color: #00b2cd;
 }
 
 .mySearchBar {
   max-width: 500px;
   margin-right: auto;
+}
+
+.mySearchRow {
+  display: block !important;
 }
 
 .nav-container {
@@ -127,18 +133,16 @@ div.mb-3.input-group {
 }
 
 .App-header {
-  background-color: #282c34;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
 }
 
 .App-link {
-  color: #61dafb;
+  color: #00b3cd;
 }
 
 @keyframes App-logo-spin {

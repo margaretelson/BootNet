@@ -3,14 +3,14 @@ import { propTypes } from "react-bootstrap/esm/Image";
 
 function SinupForm(props) {
   return (
-    <div class="column right has-text-centered">
-      <h1 class="title is-4">Sign up today</h1>
-      <p class="description">There's strength in alumni</p>
+    <div className="column right has-text-centered">
+      <h1 className="title is-4">Sign up today</h1>
+      <p className="description">There's strength in alumni</p>
       <form>
-        <div class="field">
-          <div class="control">
+        <div className="field">
+          <div className="control">
             <input
-              class="input is-medium"
+              className="input is-medium"
               type="text"
               placeholder="Name"
               name="name"
@@ -20,10 +20,10 @@ function SinupForm(props) {
             />
           </div>
         </div>
-        <div class="field">
-          <div class="control">
+        <div className="field">
+          <div className="control">
             <input
-              class="input is-medium"
+              className="input is-medium"
               type="email"
               placeholder="Email"
               name="email"
@@ -33,10 +33,10 @@ function SinupForm(props) {
             />
           </div>
         </div>
-        <div class="field">
-          <div class="control">
+        <div className="field">
+          <div className="control">
             <input
-              class="input is-medium"
+              className="input is-medium"
               type="email"
               placeholder="username"
               name="username"
@@ -46,10 +46,10 @@ function SinupForm(props) {
             />
           </div>
         </div>
-        <div class="field">
-          <div class="control">
+        <div className="field">
+          <div className="control">
             <input
-              class="input is-medium"
+              className="input is-medium"
               type="password"
               placeholder="Password"
               name="password"
@@ -58,10 +58,10 @@ function SinupForm(props) {
             />
           </div>
         </div>
-        <div class="field">
-          <div class="control">
+        <div className="field">
+          <div className="control">
             <input
-              class="input is-medium"
+              className="input is-medium"
               type="password"
               placeholder="Confirm Password"
               name="password2"
@@ -70,11 +70,11 @@ function SinupForm(props) {
             />
           </div>
         </div>
-        <button class="button is-block is-info is-fullwidth is-medium">
+        <button className="button is-block is-info is-fullwidth is-medium">
           Sign Up
         </button>
         <br />
-        <div class="booty">
+        <div className="booty">
           <small>
             <em>
               We're a network of bootcamp grads helping other bootcamp grads
