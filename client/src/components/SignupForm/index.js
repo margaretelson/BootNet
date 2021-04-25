@@ -74,12 +74,14 @@ function SinupForm(props) {
           Sign Up
         </button>
         <br />
-        <small>
-          <em>
-            We're a network of bootcamp grads helping other bootcamp grads find
-            job opportunities. Let's stick together and kick some booty!
-          </em>
-        </small>
+        <div class="booty">
+          <small>
+            <em>
+              We're a network of bootcamp grads helping other bootcamp grads
+              find job opportunities. Let's stick together and kick some booty!
+            </em>
+          </small>
+        </div>
         <small>
           <em>
             <a href="route">

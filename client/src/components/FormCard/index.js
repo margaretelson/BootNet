@@ -3,19 +3,27 @@ import { propTypes } from "react-bootstrap/esm/Image";
 function FormCard(props) {
   return (
     <div class="column right has-text-centered">
-      <h1 class="title is-4">Log in</h1>
+      <h1 class="title is-4">Already registered? Log in</h1>
       <p class="description"></p>
       {window.location.pathname.includes("/login") ? (
         <form>
           <div class="field">
             <div class="control">
-              <input class="input is-medium" type="text" placeholder="Username" />
+              <input
+                class="input is-medium"
+                type="text"
+                placeholder="Username"
+              />
             </div>
           </div>
 
           <div class="field">
             <div class="control">
-              <input class="input is-medium" type="email" placeholder="Password" />
+              <input
+                class="input is-medium"
+                type="email"
+                placeholder="Password"
+              />
             </div>
           </div>
           <button class="button is-block is-info is-fullwidth is-medium">
@@ -24,8 +32,9 @@ function FormCard(props) {
           <br />
           <small>
             <em>
-              <a href="signup">
+              <a href="signup" class="signup">
                 <br />
+                Don't have an account yet? <br />
                 Sign up
               </a>
             </em>
