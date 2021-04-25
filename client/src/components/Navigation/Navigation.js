@@ -8,23 +8,21 @@ const Navigation = () => {
   return (
     <Container>
       <div className="nav-container">
-        <ul>
-          <Link to="/">
-            <img style={{ width: "50px" }} src={BootLogo} alt="Cloud logo" />
-          </Link>
-          <Link className="link" to="/dashboard">
-            Dashboard
-          </Link>
-          <Link className="link" to="/search">
-            Alumni Search
-          </Link>
-          <Link className="link" to="/login">
-            Log In
-          </Link>
-          <Link className="link" to="/logout">
-            Log Out
-          </Link>
-        </ul>
+        <Link to="/">
+          <img style={{ width: "50px" }} src={BootLogo} alt="Cloud logo" />
+        </Link>
+        <Link className="link" to="/dashboard">
+          Dashboard
+        </Link>
+        <Link className="link" to="/search">
+          Alumni Search
+        </Link>
+        <Link className="link" to="/login">
+          Log In
+        </Link>
+        <Link className="link" to="/logout">
+          Log Out
+        </Link>
       </div>
 
       <div>

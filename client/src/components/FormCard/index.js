@@ -35,20 +35,26 @@ function FormCard(props) {
         <form>
           <div class="field">
             <div class="control">
-              <input class="input is-medium" type="text" 
-              name="name"
-              value={props.userInfo.name}
-              onChange={props.handleInputChange}
-              placeholder="Name" />
+              <input
+                class="input is-medium"
+                type="text"
+                name="name"
+                value={props.userInfo.name}
+                onChange={props.handleInputChange}
+                placeholder="Name"
+              />
             </div>
           </div>
           <div class="field">
             <div class="control">
-              <input class="input is-medium" type="email" 
+              <input
+                class="input is-medium"
+                type="email"
                 name="email"
                 value={props.userInfo.email}
                 onChange={props.handleInputChange}
-              placeholder="Email" />
+                placeholder="Email"
+              />
             </div>
           </div>
           <div class="field">
@@ -88,7 +94,10 @@ function FormCard(props) {
             </div>
           </div>
 
-          <button class="button is-block is-info is-fullwidth is-medium" onClick={props.handleSave}>
+          <button
+            class="button is-block is-info is-fullwidth is-medium"
+            onClick={props.handleSave}
+          >
             Sign Up
           </button>
           <br />
