@@ -3,7 +3,7 @@ import { useState } from "react";
 // import TitleImage from "../assets/BootNetwork-logo.png";
 // import { Container } from "react-bootstrap";
 import AllUsers from "../components/AllUsers";
-import Dashboardmain from "../components/DashboardALL";
+//import Dashboardmain from "../components/DashboardALL";
 // import UsersCard from "../components/UsersCard";
 
 /// get request to get the saved results
@@ -13,11 +13,11 @@ import Dashboardmain from "../components/DashboardALL";
 const Dashboard = () => {
   const [results, setResults] = useState([]);
   return (
-    <Dashboardmain>
+    <div>
       {results.map((result) => (
         <AllUsers />
       ))}
-    </Dashboardmain>
+    </div>
   );
 };
 

@@ -71,17 +71,21 @@ li.list-group-item {
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr;
   background: #00b3cd;
+  width: 100%;
 }
 .card-links .link {
   display: flex;
   align-items: center;
-  justify-content: center;
-  flex-direction: column;
+  justify-content: space-around;
   color: white;
   padding: 0.5rem;
   font-family: roboto;
   font-weight: bold;
   font-size: 1.5rem;
+  width: 60%;
+}
+.card-links .link img {
+  width: 30px;
 }
 .card:hover {
   transform: scale(1.15);
@@ -91,6 +95,11 @@ li.list-group-item {
   transition: 0.5s ease;
   cursor: pointer;
   margin: 1rem;
+  width: 245px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
 }
 .button {
   font-family: Barriecito, "cursive";
@@ -101,3 +110,7 @@ li.list-group-item {
   border-radius: 10px;
   padding: 0.75rem;
 }
+
+/* .icon {
+  color: #ffffff;
+} */
