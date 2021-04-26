@@ -82,14 +82,6 @@ function SinupForm(props) {
             </em>
           </small>
         </div>
-        <small>
-          <em>
-            <a href="route">
-              <br />
-              Log in
-            </a>
-          </em>
-        </small>
       </form>
     </div>
   );
