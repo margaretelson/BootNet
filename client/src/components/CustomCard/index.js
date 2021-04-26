@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "./CustomCard.css";
 import { Button, Modal } from "react-bootstrap";
 import axios from "axios";
-import git from "../../assets/github-brands.png";
+import git from "../../Assets/github-brands.png";
 //import { fab } from "@fortawesome/free-brands-svg-icons";
 
 const CustomCard = ({ alumn }) => {

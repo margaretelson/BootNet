@@ -1,6 +1,6 @@
 import React from "react";
 import { propTypes } from "react-bootstrap/esm/Image";
-import signup from "../../assets/sign-in.png";
+import signup from "../../Assets/sign-in.png";
 
 function FormCard(props) {
   return (
