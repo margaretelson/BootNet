@@ -23,6 +23,7 @@ function Signup() {
     event.preventDefault();
     api.signup(userInfo).then((results) => {
       console.log(results);
+      window.location.href="/search"
     });
   };
 

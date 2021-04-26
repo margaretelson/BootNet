@@ -70,7 +70,7 @@ function SinupForm(props) {
             />
           </div>
         </div>
-        <button className="button is-block is-info is-fullwidth is-medium">
+        <button onClick={props.handleSave} className="button is-block is-info is-fullwidth is-medium">
           Sign Up
         </button>
         <br />

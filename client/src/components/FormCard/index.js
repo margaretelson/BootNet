@@ -1,6 +1,6 @@
 import React from "react";
 import { propTypes } from "react-bootstrap/esm/Image";
-import signup from "../../Assets/sign-in.png";
+// import signup from "../../Assets/sign-in.png";
 
 function FormCard(props) {
   return (
@@ -15,6 +15,9 @@ function FormCard(props) {
                 className="input is-medium"
                 type="text"
                 placeholder="Username"
+                name="username"
+                value={props.userInfo.username}
+                onChange={props.handleInputChange}
               />
             </div>
           </div>
@@ -23,12 +26,15 @@ function FormCard(props) {
             <div className="control">
               <input
                 className="input is-medium"
-                type="email"
+                type="password"
                 placeholder="Password"
+                name="password"
+                value={props.userInfo.password}
+                onChange={props.handleInputChange}
               />
             </div>
           </div>
-          <button className="button is-block is-info is-fullwidth is-medium">
+          <button onClick={props.handleLogin} className="button is-block is-info is-fullwidth is-medium">
             Log in
           </button>
           <br />
@@ -36,7 +42,7 @@ function FormCard(props) {
             <em>
               <a href="signup" class="signup">
                 Don't have an account yet? Sign up!<br></br>
-                <img src={signup} alt="Signup icon" className="signup-icon" />
+                {/* <img src={signup} alt="Signup icon" className="signup-icon" /> */}
               </a>
             </em>
           </small>
