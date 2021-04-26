@@ -1,7 +1,7 @@
 const router = require ("express").Router()
 const axios = require ("axios")
 const passport = require ("passport")
-const User = require ("../models/user")
+const User = require ("../../models/user")
 
 var LocalStrategy = require('passport-local').Strategy;
 passport.use(new LocalStrategy(
@@ -38,7 +38,7 @@ router.get("/api/github/:user", function(req,res){
 })
 
 // Register User
-router.post('/api/register', function(req, res){
+router.post('/register', function(req, res){
     var password = req.body.password;
     var password2 = req.body.password2;
   
@@ -52,28 +52,30 @@ router.post('/api/register', function(req, res){
   
       User.createUser(newUser, function(err, user){
         if(err) throw err;
-        res.send(user).end()
+        // res.redirect("/search")
+        res.send(req.user);
       });
     } else{
       res.status(500).send("{errors: \"Passwords don't match\"}").end()
     }
   });
 // Endpoint to login
-router.post('/api/login',
+router.post('/login',
   passport.authenticate('local'),
   function(req, res) {
+  //  res.redirect("/search")
     res.send(req.user);
   }
 );
 
 // Endpoint to get current user
-router.get('/api/user', function(req, res){
+router.get('/user', function(req, res){
   res.send(req.user);
 })
 
 
 // Endpoint to logout
-router.get('/api/logout', function(req, res){
+router.get('/logout', function(req, res){
   req.logout();
   res.send(null)
 });

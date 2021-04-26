@@ -37,10 +37,10 @@ function SinupForm(props) {
           <div className="control">
             <input
               className="input is-medium"
-              type="email"
+              type="username"
               placeholder="username"
               name="username"
-              value={props.userInfo.email}
+              value={props.userInfo.username}
               onChange={props.handleInputChange}
               placeholder="Username"
             />
@@ -65,12 +65,12 @@ function SinupForm(props) {
               type="password"
               placeholder="Confirm Password"
               name="password2"
-              value={props.userInfo.password}
+              value={props.userInfo.password2}
               onChange={props.handleInputChange}
             />
           </div>
         </div>
-        <button className="button is-block is-info is-fullwidth is-medium">
+        <button onClick={props.handleSave} className="button is-block is-info is-fullwidth is-medium">
           Sign Up
         </button>
         <br />
@@ -82,14 +82,6 @@ function SinupForm(props) {
             </em>
           </small>
         </div>
-        <small>
-          <em>
-            <a href="route">
-              <br />
-              Log in
-            </a>
-          </em>
-        </small>
       </form>
     </div>
   );
