@@ -10,7 +10,6 @@ const githubUserSchema = new Schema({
   hireable: Boolean,
   portfolio: String,
   github: String,
-
 });
 
 const GithubUser = mongoose.model("GithubUser", githubUserSchema);
