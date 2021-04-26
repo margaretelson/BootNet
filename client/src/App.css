@@ -1,13 +1,18 @@
+/* FONTS */
 @import url("https://fonts.googleapis.com/css2?family=Barriecito&display=swap");
-import /title.png .App {
+import "./assets/title.png" .App {
   align-items: center;
 }
-/* .header {
-width: max-content;  padding: 0%;
-  margin-left: -1rem;
-} */
+
+/* GENERAL STYLES */
+
 a {
   padding: 2rem;
+}
+
+p {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300 !important;
 }
 
 .link {
@@ -15,27 +20,60 @@ a {
   font-family: Barriecito, "cursive";
   color: #00b2cd;
   align-items: space-around;
-  padding: 2rem;
+  padding: 0 2rem;
 }
 
-.mySearchRow {
-  display: block !important;
+div.column.register {
+  border-radius: 20px !important;
+  background-color: #00b2cd;
 }
+
+/* SEARCH */
 
 .mySearchBar {
   max-width: 500px;
   margin-right: auto;
 }
 
+.mySearchRow {
+  display: block !important;
+}
+
+/* NAVIGATION */
+
 .nav-container {
   padding-top: 1.75rem;
   padding-bottom: 1rem;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
 }
 
 .title-image {
   padding-top: 3.5rem;
   text-align: center;
 }
+
+.App-header {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+}
+
+.App-link {
+  color: #00b3cd;
+}
+
+.App-logo {
+  height: 50vmin;
+  pointer-events: none;
+}
+
+/* HEADS */
 
 h1 {
   font-size: 5rem;
@@ -52,10 +90,8 @@ h2 {
   padding-top: 1rem;
 }
 
-.App-logo {
-  height: 50vmin;
-  pointer-events: none;
-}
+/* BUTTON */
+
 .btn {
   font-family: Barriecito, "cursive" !important;
   font-size: 1.5rem !important;
@@ -86,6 +122,8 @@ h2 {
   margin-top: 0px !important;
 }
 
+/* FORM */
+
 .form-control {
   height: 5rem !important;
   font-family: roboto !important;
@@ -111,26 +149,7 @@ div.mb-3.input-group {
   height: 3rem important!;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
+/* MEDIA QUERIES */
 
 @keyframes App-logo-spin {
   from {
@@ -138,5 +157,17 @@ div.mb-3.input-group {
   }
   to {
     transform: rotate(360deg);
+  }
+}
+
+@media (max-width: 1000px) {
+  .nav-container {
+    flex-direction: column;
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
   }
 }

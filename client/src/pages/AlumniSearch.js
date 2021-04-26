@@ -55,9 +55,10 @@ const AlumniSearch = () => {
           </InputGroup.Append>
         </InputGroup>
       </Row>
-      <div className="d-flex flex-wrap">
-        {alumn ?
-          alumn.map((user) => <CustomCard key={user.id} alumn={user} />): "No results shown"}
+      <div className="d-flex flex-wrap justify-content-around">
+        {alumn
+          ? alumn.map((user) => <CustomCard key={user.id} alumn={user} />)
+          : "No results shown"}
       </div>
       {/* <AllUsers /> */}
     </Container>

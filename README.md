@@ -14,7 +14,7 @@
 
 ## DESCRIPTION
 
-BootNetwork offers a way for bootcamp grads to help other bootcamp grads. The app uses GitHub as a networking tool. You can see others' repos and view their code. Look for others who graduated from your bootcamp or from other top bootcamps. Check their respective commit histories to see if they're active on GitHub.
+BootNetwork helps bootcamp grads find other bootcamp grads through GitHub. You can search for people who graduated from your bootcamp or from other top bootcamps. Search for developers by language or platform (such as Python or AWS), and check out their repos to see what they're building. Search by company and city to see who's working in tech near you. Or find archived repos of deceased grads who attempted to deploy with Heroku. (R.I.P., my friends!)
 
 This app was the final group project for the Columbia University Engineering Full-Stack Boot Camp (October 2020-April 2021).
 
@@ -112,8 +112,7 @@ SEARCH BY COMPANY
 SEARCH BY LANGUAGE OR TOOL
 
 - Search for bootcamp grads who are using, say, React
-- Search for deceased grads who attempted to deploy with Heroku
-  (R.I.P., my friends!)
+- Find iOS developers or AWS network engineers
 
 SEARCH USING BOOLEANS (as described under "Usage," above)
 
@@ -143,8 +142,6 @@ If the authenticated user is authenticated through OAuth without the user scope,
 - Lorem ipsum
 - Lorem ipsum
 
-## USER STORY
-
 ## TECHNOLOGIES
 
 ### GitHub API
@@ -157,6 +154,10 @@ A GET request to the GitHub API calls the "users" endpoint (https://api.github.c
 
 ### React-Bootstrap
 
+### Passport
+
+![Passport logo](/client/src/assets/passport.png)
+
 ## INTEGRATIONS
 
 In addition to our app, we created other ways for people to interact with BootNet.
@@ -168,6 +169,12 @@ We created [a BootNet page on LinkedIn](https://www.linkedin.com/company/bootnet
 
 ###Slack Channel
 We also created a ![Slack channel](/client/src/assets/slack.png) @BootNetwork.
+
+## FUTURE DIRECTIONS
+
+In the future, we'd like to develop a more sophisticated dashboard. Mateo developed a UI that could eventually be programmed to show
+
+!(Future developments UI)[/client/src/assets/future-dev.png]
 
 ## CREDITS
 
