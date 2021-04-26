@@ -1,7 +1,7 @@
 import React from "react";
-import HeaderImage from "../../assets/header.png";
+import HeaderImage from "../../Assets/header.png";
 import { Link } from "react-router-dom";
-import BootLogo from "../../assets/logo-sans-title.png";
+import BootLogo from "../../Assets/logo-sans-title.png";
 import { Container } from "react-bootstrap";
 
 const Navigation = () => {

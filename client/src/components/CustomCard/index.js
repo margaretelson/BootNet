@@ -2,8 +2,7 @@ import React, { useState } from "react";
 import "./CustomCard.css";
 import { Button, Modal } from "react-bootstrap";
 import axios from "axios";
-import git from "../../assets/github-brands.png";
-//import { fab } from "@fortawesome/free-brands-svg-icons";
+import git from "../../Assets/github-brands.png";
 
 const CustomCard = ({ alumn }) => {
   const [hover, setHover] = useState(false);
@@ -49,7 +48,7 @@ const CustomCard = ({ alumn }) => {
       }
     });
   };
-  // console.log(alumn)
+  console.log(alumn.url)
   // console.log(alumnDetail)
 
   //This code limits the user profile to 50 characters. If the profile is >50 characters, an ellipsis appears at the end, cutting the profile short. The full profile can be seen by hovering over the card.
@@ -65,7 +64,7 @@ const CustomCard = ({ alumn }) => {
         {alumnDetail ? (
           <Button
             onClick={() => {
-              getAlumnDetail(alumn.url);
+              getAlumnDetail(alumn.github);
             }}
           >
             User Details
