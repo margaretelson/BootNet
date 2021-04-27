@@ -126,8 +126,8 @@ const CustomCard = ({ alumn }) => {
           target="_blank"
           rel="noreferrer"
         >
-          {/* <img src={git} alt="GitHub logo" /> */}
-          GitHub
+          <img src={git} alt="GitHub logo" />
+           GitHub
         </a>
       </div>
     </div>
