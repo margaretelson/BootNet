@@ -14,17 +14,10 @@
   },
   "author": "",
   "license": "ISC",
-  "devDependencies": {
+  "dependencies": {
     "concurrently": "^4.1.2",
     "dotenv": "^8.2.0",
-    "nodemon": "^1.18.7"
-  },
-  "dependencies": {
-    "@fortawesome/fontawesome-free": "^5.15.3",
-    "@fortawesome/fontawesome-svg-core": "^1.2.35",
-    "@fortawesome/free-brands-svg-icons": "^5.15.3",
-    "@fortawesome/free-solid-svg-icons": "^5.15.3",
-    "@fortawesome/react-fontawesome": "^0.1.14",
+    "nodemon": "^1.18.7",
     "axios": "^0.21.1",
     "bcryptjs": "*",
     "bootstrap": "^4.6.0",
@@ -37,7 +30,6 @@
     "node": "v14.15.4",
     "passport": "^0.4.1",
     "passport-local": "^1.0.0",
-    "react": "^17.0.2",
-    "http-proxy-middleware": "^1.2.1"
+    "react": "^17.0.2"
   }
 }
