@@ -7,7 +7,7 @@ import Dashboardmain from "../components/Dashboardmain";
 //import UsersCard from "../components/UsersCard";
 
 
-/// get request to get the saved results
+// /// get request to get the saved results
 
 //display results.map()
 //
@@ -18,11 +18,10 @@ const Dashboard = () => {
       {/* {results.map(results => */}
       <AllUsers/>
     
-      {/* )} */}
+//       {/* )} */}
 
-    </Dashboardmain>
+//     </Dashboardmain>
 
   );
 };
-
 export default Dashboard;

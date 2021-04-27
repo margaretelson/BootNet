@@ -3,8 +3,13 @@ import HeaderImage from "../../Assets/header.png";
 import { Link } from "react-router-dom";
 import BootLogo from "../../Assets/logo-sans-title.png";
 import { Container } from "react-bootstrap";
-
+import api from "../../utils/api"
 const Navigation = () => {
+  const handleSignout=()=>{
+    api.signout().then(results=>{
+      window.location.href="/login"
+    })
+  }
   return (
     <Container>
       <div className="nav-container">
@@ -20,7 +25,7 @@ const Navigation = () => {
         <Link className="link" to="/login">
           Log In
         </Link>
-        <Link className="link" to="/logout">
+        <Link className="link" onClick={handleSignout} >
           Log Out
         </Link>
       </div>

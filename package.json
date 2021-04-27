@@ -27,7 +27,7 @@
     "if-env": "^1.0.4",
     "mongodb": "^3.6.6",
     "mongoose": "^5.12.3",
-    "node": "v14.15",
+    "node": "14.15.4",
     "passport": "^0.4.1",
     "passport-local": "^1.0.0",
     "react": "^17.0.2"
