@@ -3,22 +3,24 @@
     padding: 0;
     box-sizing: border-box;
   }
+
+  
   
   h1 {
-    color: #f88d01;
+    color: #fea905;
     font-weight: 600;
     font-size: 3rem;
     opacity: 0.8;
   }
   h2,
   p {
-    color: #0189f8;
+    color: #00B2CD;
     font-weight: 500;
     opacity: 0.8;
   }
   
   h3 {
-    color: #f88d01;
+    color: #fea905;
     font-weight: 600;
     opacity: 0.8;
   }
@@ -26,7 +28,7 @@
   main {
     font-family: "Poppins", sans-serif;
     min-height: 100vh;
-    background: linear-gradient(to right top, #3299e8, #ebc36c);
+    background: linear-gradient(to right top, #00B2CD, #fea905);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -97,7 +99,7 @@
   }
   
   .pro {
-    background: linear-gradient(to right top, #3064cd, #e55913);
+    background: linear-gradient(to right top, #00B2CD, #fea905);
     border-radius: 2rem;
     color: white;
     padding: 1rem;
@@ -177,7 +179,7 @@
   
   .percentage {
     font-weight: bold;
-    background: linear-gradient(to right top, #4661cd, #f35100);
+    background: linear-gradient(to right top, #00B2CD, #fea905);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
