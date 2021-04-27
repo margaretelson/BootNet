@@ -1,7 +1,5 @@
 const mongoose = require("mongoose");
-
 const Schema = mongoose.Schema;
-
 const githubUserSchema = new Schema({
   avatar_url: String,
   login: String,
@@ -10,9 +8,6 @@ const githubUserSchema = new Schema({
   hireable: Boolean,
   portfolio: String,
   github: String,
-
 });
-
 const GithubUser = mongoose.model("GithubUser", githubUserSchema);
-
 module.exports = GithubUser;
