@@ -8,5 +8,7 @@ package-lock.json
 client/package-lock.json
 .prettierrc
 worksheet.linkedin.txt
+<<<<<<< HEAD
+=======
 
-
+>>>>>>> e847c224bdfad6055c7d21a64046d92ab7060445

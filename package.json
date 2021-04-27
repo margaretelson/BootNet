@@ -27,10 +27,9 @@
     "if-env": "^1.0.4",
     "mongodb": "^3.6.6",
     "mongoose": "^5.12.3",
-    "node": "14.15.4",
+    "node": "14.16.1",
     "passport": "^0.4.1",
     "passport-local": "^1.0.0",
-    "react": "^17.0.2",
-    "http-proxy-middleware": "^1.2.1"
+    "react": "^17.0.2"
   }
 }

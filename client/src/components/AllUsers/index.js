@@ -10,7 +10,7 @@ const AllUsers = () => {
       console.log(response);
       setUsers(response.data);
     });
-  }, []);
+  }, [users]);
 
   return (
     <div>

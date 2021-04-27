@@ -1,10 +1,10 @@
 import React from "react";
-// import title from "../../Assets/title.png";
+import title from "../../Assets/title.png";
 
 function index() {
   return (
     <div className="column left">
-      {/* <img src={title} alt="title" /> */}
+      <img src={title} alt="title" />
       <h2 className="subtitle colored is-4">There's strength in alumni</h2>
       <p className="booty">
         We're a network of bootcamp grads helping other bootcamp grads find job
