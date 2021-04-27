@@ -2,7 +2,9 @@ import React, { useState } from "react";
 import "./CustomCard.css";
 import { Button, Modal } from "react-bootstrap";
 import axios from "axios";
+
 import git from "../../Assets/github-brands.png";
+
 
 const CustomCard = ({ alumn }) => {
   const [hover, setHover] = useState(false);
@@ -126,7 +128,7 @@ const CustomCard = ({ alumn }) => {
           target="_blank"
           rel="noreferrer"
         >
-          <img src={git} alt="GitHub logo" />
+          {/* <img src={git} alt="GitHub logo" /> */}
           GitHub
         </a>
       </div>
