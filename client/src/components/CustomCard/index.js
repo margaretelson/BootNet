@@ -5,6 +5,7 @@ import axios from "axios";
 import git from "../../Assets/github-brands.png";
 
 const CustomCard = ({ alumn }) => {
+
   const [hover, setHover] = useState(false);
   const [alumnDetail, setAlumnDetail] = useState({});
   // Modal functions
@@ -14,9 +15,9 @@ const CustomCard = ({ alumn }) => {
     setShow(false);
   };
 
-  const getAlumnDetail = (url) => {
+  const getAlumnDetail = (name) => {
     axios
-      .get(url)
+      .get(`https://api.github.com/users/${name}`)
       .then((res) => {
         console.log("Is there a response?", res);
         console.log(res.data);
@@ -35,20 +36,24 @@ const CustomCard = ({ alumn }) => {
   const handleSave = () => {
     console.log("The alumn being saved is", alumnDetail);
     axios.post("/api/users", alumnDetail).then((res) => {
-      if (res) {
+      if (res.status === 200) {
         alert("User profile was saved");
       }
     });
   };
 
-  const handleDelete = () => {
-    axios.delete("/api/users", alumnDetail).then((res) => {
-      if (res) {
-        alert("User profile was deleted");
-      }
-    });
+  const handleDelete = (id) => {
+    axios.delete("/api/users/" + id).then((res) => {
+        if (res.status === 200) {
+          alert("User profile was deleted");
+          handleClose();
+        }
+      });
   };
-  console.log(alumn.url)
+
+  console.log(alumn.login);
+  const id = alumn._id;
+  console.log(id);
   // console.log(alumnDetail)
 
   //This code limits the user profile to 50 characters. If the profile is >50 characters, an ellipsis appears at the end, cutting the profile short. The full profile can be seen by hovering over the card.
@@ -64,7 +69,7 @@ const CustomCard = ({ alumn }) => {
         {alumnDetail ? (
           <Button
             onClick={() => {
-              getAlumnDetail(alumn.github);
+              getAlumnDetail(alumn.login);
             }}
           >
             User Details
@@ -110,7 +115,7 @@ const CustomCard = ({ alumn }) => {
                 </button>
               </li>
               <li className="list-group-item">
-                <button className="button" onClick={handleDelete}>
+                <button className="button" onClick={() => handleDelete(id)}>
                   Delete
                 </button>
               </li>
@@ -127,7 +132,7 @@ const CustomCard = ({ alumn }) => {
           rel="noreferrer"
         >
           <img src={git} alt="GitHub logo" />
-           GitHub
+          GitHub
         </a>
       </div>
     </div>
